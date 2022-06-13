@@ -1,0 +1,214 @@
+.ordering {
+
+    // .ordering__container
+
+    &__container {
+    }
+
+    // .ordering__body
+
+    &__body {
+        display: grid;
+        @include _992 {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__title {
+        padding-bottom: 10px;
+        
+        @include _992 {
+            grid-row: 1/1; grid-column: 1/1;
+        }
+    }
+
+    // .ordering__info
+
+    &__info {
+        @include _992 {
+            grid-row: 2/2; grid-column: 1/1;
+        }
+        
+        // .ordering__info--fieldset
+
+        &--fieldset {
+            padding: 45px 0 0 0;
+        }
+
+        // .ordering__info--title
+
+        &--title {
+            padding-bottom: 15px;
+            
+        }
+
+        // .ordering__info--label
+
+        &--label {
+            position: relative;
+            display: block;
+
+            margin-top: 15px;
+        }
+
+        // .ordering__info--select
+
+        &--select {
+        }
+
+        // .ordering__info--select-icon
+
+        &--select-icon {
+            
+        }
+
+        // .ordering__info--min-block
+
+        &--min-block {
+        }
+
+        // .ordering__info--name
+
+        &--name {
+            font-weight: 600;
+            font-style: 1rem;
+            color: var(--dark-gray-2);
+            padding-bottom: 10px;
+        }
+
+        // .ordering__info--input
+
+        &--input {
+        }
+
+        // .ordering__info--textarea
+
+        &--textarea {
+        }
+
+        // .ordering__info--footer
+
+        &--footer {
+            padding: 5px 0 0 0;
+        }
+
+        // .ordering__info--submit
+
+        &--submit {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        // .ordering__info--submit-icon
+
+        &--submit-icon {
+        }
+    }
+
+    // .ordering__product-list
+
+    &__product-col {
+        padding-top: 20px;
+        @include _992 {
+            padding-top: 0;
+            padding-left: 50px;
+            grid-row: 1/3; grid-column: 2/2;
+        }
+
+        flex: 0 1 50%;
+        
+        @media(min-width: 1180px) {
+            padding-left: 102px;
+        }
+    }
+
+    &__product-list {
+        
+    }
+
+    &__product-all-price {
+        margin-top: 0;
+        padding: 15px;
+        background: var(--light-2);
+        border-radius: var(--br);
+    }
+
+    &__product-item {
+        width: 100%; height: 195px;
+        @include _768 {
+            width: 100%; height: 235px;
+        }
+        &--settings {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+        &--price {
+            flex: 0 1 auto;
+            @media(min-width: 600px) {
+                flex: 0 1 auto;
+            }
+        }
+        &--image, &--image picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        margin: 2px 0;
+    }
+
+    &__popup {
+        &--body {
+            padding: 82px 25px 25px 25px;
+            @include _426 {
+                padding: 82px 60px 35px 60px;
+            }
+
+            line-height: 108%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &--head-icon {
+            width: 108px; height: 108px;
+            padding: 15px;
+
+            background-color: var(--bg, var(--accent-3));
+            border-radius: 50%;
+
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        &--head-img {
+            max-width: 100%;
+        }
+        &--title {
+            padding-top: 15px;
+        }
+        &--text {
+            padding-top: 15px;
+            font-style: 1rem;
+            color: var(--accent-3);
+            text-align: center;
+            & p {
+                padding: 5px 0;
+            }
+        }
+        &--btn {
+            margin-top: 22px;
+            @include _426 {
+                margin-top: 42px;
+            }
+            
+            width: 100%;
+        }
+    }
+}
+

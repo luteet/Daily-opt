@@ -1,0 +1,137 @@
+
+$main_font: 'Montserrat';
+
+$accent: teal;
+
+$white: #FFFFFF;
+$black: #000000;
+
+$containerPadding: 8;
+
+$container: 1366 + ($containerPadding * 2);
+$containerMin: 800 + ($containerPadding * 2);
+$containerLarge: 1524 + ($containerPadding * 2);
+
+:root {
+    --title-font: 'Montserrat';
+    --main-font: 'Montserrat';
+    
+    --accent: #776BEB;
+    --accent-2: #57FFAE;
+    --accent-3: #958FB1;
+    --accent-light-1: #A8A4BE;
+    --accent-light-2: #80799F;
+    --accent-light-3: #C8C4DC;
+
+    --dark: #23212D;
+    --dark-2: #3F3A59;
+
+    --white: #FFF;
+    --black: #000;
+    --gray: #EDECF5;
+    --dark-gray: #6E6B7B;
+    --dark-gray-2: #585569;
+    --light: #F4F2FF;
+    --light-2: #F8F7FF;
+    --light-3: #E4E2F0;
+    --light-4: #FBFBFF;
+    --light-5: #F7F5FF;
+
+    --dark-green: #194A33;
+    --dark-blue: #201C39;
+    --pink: #FF2667;
+    --red: #e70000;
+    --light-green: #4CE19A;
+
+    --container-padding: 8px;
+    --br: 14px;
+}
+
+
+
+@font-face {
+    @include font-include('Montserrat', 500, swap, normal, 'Montserrat-Medium');
+}
+
+@font-face {
+    @include font-include('Montserrat', 600, swap, normal, 'Montserrat-SemiBold');
+}
+
+@font-face {
+    @include font-include('Montserrat', 700, swap, normal, 'Montserrat-Bold');
+}
+
+@font-face {
+    @include font-include('Montserrat', 800, swap, normal, 'Montserrat-ExtraBold');
+}
+
+@font-face {
+    font-family: 'daily-opt';
+    src:
+      url('daily-opt.ttf?y86jnw') format('truetype'),
+      url('daily-opt.woff?y86jnw') format('woff'),
+      url('daily-opt.svg?y86jnw#daily-opt') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="_icon-"], [class*=" _icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'daily-opt' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  ._icon-select-arrow::before {
+    content: "\e90d";
+  }
+  ._icon-x::before {
+    content: "\e90c";
+  }
+  ._icon-burger::before {
+    content: "\e90a";
+  }
+  ._icon-house::before {
+    content: "\e90b";
+  }
+  ._icon-arrow-to-left::before {
+    content: "\e900";
+  }
+  ._icon-arrow-to-right::before {
+    content: "\e901";
+  }
+  ._icon-cart::before {
+    content: "\e902";
+  }
+  ._icon-document::before {
+    content: "\e903";
+  }
+  ._icon-fire::before {
+    content: "\e904";
+  }
+  ._icon-favorite::before {
+    content: "\e905";
+  }
+  ._icon-phone::before {
+    content: "\e906";
+  }
+  ._icon-search::before {
+    content: "\e907";
+  }
+  ._icon-star::before {
+    content: "\e908";
+  }
+  ._icon-stock::before {
+    content: "\e909";
+  }
+  
+  

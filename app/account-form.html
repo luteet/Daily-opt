@@ -1,0 +1,86 @@
+@@include("html/_header.html")
+
+<div class="wrapper">
+    <section class="account-form">
+        <div class="account-form__container user-container _container">
+            <form action="#" class="user-form">
+                <div class="account-form__header user-form__header">
+                    <div class="user-form__page-navigation">
+                        <ol>
+                            <li>
+                                <a href="#">
+                                    Главная
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Личный кабинет
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Учетная запись
+                                </a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="account-form__body user-form__body">
+                    <h2 class="user-form__title">
+                        Учетная запись
+                    </h2>
+                    <div class="user-form__navigation">
+                        <ul class="user-form__navigation--list">
+                            <li class="user-form__navigation--item">
+                                <a href="#" class="user-form__navigation--link _current">
+                                    Учетная запись
+                                </a>
+                            </li>
+                            <li class="user-form__navigation--item">
+                                <a href="#" class="user-form__navigation--link">
+                                    Смена пароля
+                                </a>
+                            </li>
+                            <li class="user-form__navigation--item">
+                                <a href="#" class="user-form__navigation--link">
+                                    История заказов
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="user-form__navigation--footer">
+                            <a href="#" class="user-form__navigation--accent-link">
+                                Выйти
+                            </a>
+                        </div>
+                    </div>
+                    <div class="user-form__content">
+                        <fieldset class="user-form__row">
+                            <legend class="user-form__legend">
+                                Ваш профиль:
+                            </legend>
+                            <label class="user-form__label">
+                                <input type="text" name="first-name" placeholder="Введите Имя" class="user-form__input">
+                            </label>
+                            <label class="user-form__label">
+                                <input type="text" name="last-name" placeholder="Введите Фамилию" class="user-form__input">
+                            </label>
+                            <label class="user-form__label">
+                                <input type="text" name="e-mail" placeholder="Введите E-mail" class="user-form__input">
+                            </label>
+                        </fieldset>
+                        <fieldset class="user-form__footer">
+                            <div class="user-form__footer--info">
+                                Вы согласились с <a href="#">Политикой конфиденциальности</a> при прохождении регистрации (совершении заказа) в нашем интернет магазине
+                            </div>
+                            <button class="user-form__footer--submit user-form__btn _large">
+                                Сохранить
+                            </button>
+                        </fieldset>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+@@include("html/_footer.html")

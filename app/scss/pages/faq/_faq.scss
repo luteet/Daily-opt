@@ -1,0 +1,110 @@
+.faq {
+
+    // .faq__container
+
+    &__container {
+    }
+
+    // .faq__body
+
+    &__body {
+    }
+
+    // .faq__title
+
+    &__title {
+    }
+
+    // .faq__list
+
+    &__list {
+        padding-top: 25px;
+        @include _992 {
+            padding-top: 54px;
+        }
+        margin: -15px 0;
+        max-width: 791px;
+    }
+
+    // .faq__item
+
+    &__item {
+        margin: 10px 0;
+        @include _768 {
+            margin: 15px 0;
+        }
+        &._active &--title {
+            background-color: var(--light-3);
+            color: var(--dark-gray-2);
+            &::after {
+                transform: translate(0,-70%) scaleY(-1);
+            }
+        }
+        // .faq__item--title
+
+        &--title {
+            cursor: pointer;
+            user-select: none;
+
+            line-height: 108%;
+            font-size: 1rem;
+            color: var(--white);
+
+            background-color: var(--black);
+            border-radius: 6px;
+            padding: 18px 45px 18px 35px;
+            @include _360 {
+                padding: 28px 55px 28px 45px;
+            }
+            @include _768 {
+                font-size: 1.125rem;
+            }
+
+            position: relative;
+
+            transition: background-color .2s ease-in-out, color .2s ease-in-out;
+            &::before, &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                display: inline-block;
+            }
+            &::before {
+                width: 6px; height: 6px;
+                border-radius: 50%;
+                left: 15px;
+                @include _360 {
+                    left: 25px;
+                }
+                transform: translate(0,-70%);
+                background-color: var(--color, var(--accent));
+            }
+            &::after {
+                font-family: 'daily-opt';
+                content: "\e90d";
+                font-size: 0.75rem;
+                right: 20px;
+                @include _360 {
+                    right: 30px;
+                }
+                transition: transform .2s ease-in-out;
+                transform: translate(0,-50%);
+            }
+        }
+
+        // .faq__item--content
+
+        &--content {
+            padding: 13px 0;
+            font-size: 1rem;
+            line-height: 108%;
+            color: var(--accent-3);
+            @include _992 {
+                font-size: 1.125rem;
+            }
+            & p {
+                padding: 7px 0;
+            }
+        }
+    }
+}

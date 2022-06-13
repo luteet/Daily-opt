@@ -1,0 +1,28 @@
+<section class="like-products">
+    <div class="like-products__container _container _large">
+        <div class="like-products__body">
+            <h2 class="like-products__title _section-title _min">
+                Похожие товары
+            </h2>
+            <div class="like-products__slider swiper">
+                <ul class="like-products__list swiper-wrapper">
+                    @@loop("_like-products-item.html", [
+                    {"bg": '#57FFAE', "image": '1'},
+                    {"bg": '#57FFAE', "image": '2'},
+                    {"bg": '#57FFAE', "image": '3'},
+                    {"bg": '#57FFAE', "image": '4'},
+                    {"bg": '#776BEB', "image": '1'},
+                    {"bg": '#776BEB', "image": '2'},
+                    {"bg": '#776BEB', "image": '3'},
+                    {"bg": '#776BEB', "image": '4'},
+                    ])
+                </ul>
+                <div class="like-products__nav">
+                    <div class="like-products__arrow _next _icon-arrow-to-right swiper-button-next"></div>
+                    <div class="like-products__arrow _prev _icon-arrow-to-left swiper-button-prev"></div>
+                    <div class="like-products__scrollbar swiper-scrollbar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

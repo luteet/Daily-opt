@@ -1,0 +1,52 @@
+@@include("html/_header.html")
+
+<div class="wrapper">
+    <div class="page-header _section-pt">
+        <div class="page-header__container _container">
+            @@include("html/categories/_categories-btn.html")
+            @@include("html/categories/_categories.html")
+        </div>
+    </div>
+    <section class="cart-page _section-pt">
+        <div class="cart-page__container _container">
+            <form action="#" class="cart-page__body" style="min-height: 450px;">
+                <h2 class="cart-page__title _section-title _min">
+                    Избранное
+                </h2>
+                <div class="cart-page__block">
+                    <div class="cart-page__block--wrapper">
+                        <ul class="cart-page__list _empty-list">
+                            @@loop("html/cart/_cart-item.html", [
+                            {"image": '1', "bg": '#FFDA93', "class": 'cart-page__item'},
+                            {"image": '2', "bg": '#7D70FF', "class": 'cart-page__item'},
+                            {"image": '3', "bg": '#8BFFC7', "class": 'cart-page__item'},
+                            {"image": '4', "bg": '#FFDA93', "class": 'cart-page__item'},
+                            ])
+                        </ul>
+                    </div>
+                    <div class="cart-page__block--footer">
+                        <a href="ordering.html" class="cart-page__block--link _btn _accent">
+                            <img src="img/icons/document.png" width="22" alt="" class="cart-page__block--icon">
+                            Оформление заказа
+                        </a>
+                    </div>
+                </div>
+                <div class="cart-page__empty _empty-block" style="display: none; opacity: 0;">
+                    <div class="cart-page__empty--body _txt-center">
+                        <div class="cart-page__empty--image">
+                            <picture>
+                                <source srcset="img/favorites/none.png" type="image/webp">
+                                <img src="img/favorites/none.png" alt="" width="88" class="cart-page__empty--img">
+                            </picture>
+                        </div>
+                        <div class="cart-page__empty--text">
+                            Здесь пока что <br> холодно и одиноко..
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+@@include("html/_footer.html")

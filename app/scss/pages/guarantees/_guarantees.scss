@@ -1,0 +1,39 @@
+.guarantees {
+
+    // .guarantees__container
+
+    &__container {
+    }
+
+    // .guarantees__body
+
+    &__body {
+    }
+
+    // .guarantees__title
+
+    &__title {
+    }
+
+    // .guarantees__text
+
+    &__text {
+        padding-top: 15px;
+
+        color: var(--accent-3);
+        font-size: 1rem;
+        line-height: 108%;
+        max-width: 698px;
+        & p {
+            padding: 7px 0;
+        }
+        @include _992 {
+            font-size: 1.125rem;
+            padding-top: 25px;
+            & p {
+                padding: 15px 0;
+            }
+        }
+    }
+}
+

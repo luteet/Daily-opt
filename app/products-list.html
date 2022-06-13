@@ -1,0 +1,333 @@
+@@include("html/_header.html")
+
+<div class="wrapper">
+    <div class="page-header _section-pt">
+        <div class="page-header__container _container">
+            <div class="page-address">
+                <div class="page-address__body">
+                    <span class="page-address__icon _icon-house"></span>
+                    <ul class="page-address__list">
+                        <li class="page-address__item">
+                            <a href="#" class="page-address__link">
+                                Всё для кофейни
+                            </a>
+                        </li>
+                        <li class="page-address__item">
+                            <a href="#" class="page-address__link">
+                                Экологичные стаканчики
+                            </a>
+                        </li>
+                        <li class="page-address__item">
+                            <a href="#" class="page-address__link">
+                                Гофрированный стакан бумажный 110мл
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            @@include("html/categories/_categories-btn.html", {
+                "class": ''
+            })
+            @@include("html/categories/_categories.html", {
+                "class": ''
+            })
+        </div>
+    </div>
+    <section class="products-list _section-pt">
+        <div class="products-list__container _with-filter _container">
+            <div class="products-list__filter products-filter">
+                <button class="products-filter__mob-btn" title="Фильтр">
+                    <svg width="17px" height="17px" viewBox="0 0 329.992 329.992">
+                        <path fill="#FFF" d="M304.996,0h-280c-8.284,0-15,6.716-15,15v60c0,4.227,1.783,8.257,4.91,11.1l105.09,95.528v133.364
+                            c0,5.199,2.691,10.027,7.113,12.76c2.41,1.488,5.144,2.24,7.887,2.24c2.293,0,4.592-0.525,6.708-1.584l60-30
+                            c5.082-2.541,8.292-7.734,8.292-13.416V181.628L315.086,86.1c3.127-2.843,4.91-6.873,4.91-11.1V15
+                            C319.996,6.716,313.28,0,304.996,0z M184.906,163.893c-3.127,2.843-4.91,6.873-4.91,11.1v100.73l-30,15v-115.73
+                            c0-4.227-1.783-8.257-4.91-11.1L63.797,90h202.398L184.906,163.893z M289.996,60h-250V30h250V60z"/>
+                    </svg>
+                </button>
+                <div class="products-filter__popup">
+                    <div class="products-filter__popup--bg"></div>
+                    <form action="#" class="products-filter__body">
+                        <fieldset class="products-filter__fieldset products-filter__price">
+                            <h2 class="products-filter__price--title _title">
+                                Подобрать по цене
+                            </h2>
+                            <div class="products-filter__price--range products-filter__range">
+                                <input type="range" name="price-range" step="1" min="10" max="200" class="products-filter__range--input">
+                                <div class="products-filter__range--wrapper">
+                                    <div class="products-filter__range--body"></div>
+                                </div>
+                                <div class="products-filter__range--row">
+                                    <label class="products-filter__range--col">
+                                        <input type="text" name="min" class="products-filter__range--text-input _min-value">
+                                    </label>
+                                    <label class="products-filter__range--col">
+                                        <input type="text" name="max" class="products-filter__range--text-input _max-value">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="products-filter__price--footer">
+                                <div class="products-filter__price--founded">
+                                    <span class="products-filter__price--founded-text">Найден</span>
+                                    <strong class="products-filter__price--founded-value">1000 товар</strong>
+                                </div>
+                                <button class="products-filter__price--submit _btn _min" type="submit">
+                                    Показать
+                                </button>
+                            </div>
+                        </fieldset>
+                        <fieldset class="products-filter__fieldset">
+                            <ul class="products-filter__list">
+                                <li class="products-filter__li">
+                                    <a href="#" class="products-filter__link">
+                                        <span>
+                                            Альбомы
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="products-filter__li">
+                                    <a href="products-list.html" class="products-filter__link">
+                                        <span>
+                                            Блокноты
+                                        </span>
+                                    </a>
+                                    <button class="products-filter__link--list-btn" type="button">
+                                        <i class="products-filter__link--arrow _icon-select-arrow"></i>
+                                    </button>
+                                    <div class="products-filter__sub">
+                                        <ul class="products-filter__sub--list">
+                                            <li class="products-filter__sub--item">
+                                                <a href="products-list.html" class="products-filter__sub--link">
+                                                    <span>Блокнот 1</span>
+                                                </a>
+                                            </li>
+                                            <li class="products-filter__sub--item">
+                                                <a href="products-list.html" class="products-filter__sub--link">
+                                                    <span>Блокнот 2</span>
+                                                </a>
+                                                <button class="products-filter__sub--list-btn" type="button">
+                                                    <i class="products-filter__sub--link-arrow _icon-select-arrow"></i>
+                                                </button>
+                                                <div class="products-filter__sub">
+                                                    <ul class="products-filter__sub--list">
+                                                        <li class="products-filter__sub--item">
+                                                            <a href="products-list.html" class="products-filter__sub--link">
+                                                                <span>
+                                                                    Блокнот 2 (1)
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="products-filter__sub--item">
+                                                            <a href="products-list.html" class="products-filter__sub--link">
+                                                                <span>
+                                                                    Блокнот 2 (2)
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="products-filter__sub--item">
+                                                <a href="products-list.html" class="products-filter__sub--link">
+                                                    <span>
+                                                        Блокнот 3
+                                                    </span>
+                                                </a>
+                                                <button class="products-filter__sub--list-btn" type="button">
+                                                    <i class="products-filter__sub--link-arrow _icon-select-arrow"></i>
+                                                </button>
+                                                <div class="products-filter__sub">
+                                                    <ul class="products-filter__sub--list">
+                                                        <li class="products-filter__sub--item">
+                                                            <a href="products-list.html" class="products-filter__sub--link">
+                                                                <span>Блокнот 3 (1)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="products-filter__sub--item">
+                                                            <a href="products-list.html" class="products-filter__sub--link">
+                                                                <span>Блокнот 3 (2)</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="products-filter__sub--item">
+                                                <a href="products-list.html" class="products-filter__sub--link">
+                                                    <span>Блокнот 4</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="products-filter__li _sub-active">
+                                    <a href="products-list.html" class="products-filter__link">
+                                        <span>
+                                            Калькуляторы
+                                        </span>
+                                    </a>
+                                    <button class="products-filter__link--list-btn" type="button">
+                                        <i class="products-filter__link--arrow _icon-select-arrow"></i>
+                                    </button>
+                                    <div class="products-filter__sub">
+                                        <ul class="products-filter__sub--list">
+                                            <li class="products-filter__sub--item">
+                                                <a href="products-list.html" class="products-filter__sub--link">
+                                                    <span>Калькулятор 1</span>
+                                                </a>
+                                            </li>
+                                            <li class="products-filter__sub--item _sub-active">
+                                                <a href="products-list.html" class="products-filter__sub--link">
+                                                    <span>Калькулятор 2</span>
+                                                </a>
+                                                <button class="products-filter__sub--list-btn" type="button">
+                                                    <i class="products-filter__sub--link-arrow _icon-select-arrow"></i>
+                                                </button>
+                                                <div class="products-filter__sub">
+                                                    <ul class="products-filter__sub--list">
+                                                        <li class="products-filter__sub--item">
+                                                            <a href="products-list.html" class="products-filter__sub--link">
+                                                                <span>
+                                                                    Калькулятор 2 (1)
+                                                                </span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="products-filter__sub--item _sub-active">
+                                                            <a href="products-list.html" class="products-filter__sub--link">
+                                                                <span>
+                                                                    Калькулятор 2 (2)
+                                                                </span>
+                                                            </a>
+                                                            <button class="products-filter__sub--list-btn" type="button">
+                                                                <i class="products-filter__sub--link-arrow _icon-select-arrow"></i>
+                                                            </button>
+                                                            <div class="products-filter__sub">
+                                                                <ul class="products-filter__sub--list">
+                                                                    <li class="products-filter__sub--item">
+                                                                        <a href="products-list.html" class="products-filter__sub--link _current">
+                                                                            <span>
+                                                                                Калькулятор 2 (1)
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li class="products-filter__sub--item">
+                                                                        <a href="products-list.html" class="products-filter__sub--link">
+                                                                            <span>
+                                                                                Калькулятор 2 (2)
+                                                                            </span>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="products-filter__sub--item">
+                                                <a href="products-list.html" class="products-filter__sub--link">
+                                                    <span>
+                                                        Калькулятор 3
+                                                    </span>
+                                                </a>
+                                                <button class="products-filter__sub--list-btn" type="button">
+                                                    <i class="products-filter__sub--link-arrow _icon-select-arrow"></i>
+                                                </button>
+                                                <div class="products-filter__sub">
+                                                    <ul class="products-filter__sub--list">
+                                                        <li class="products-filter__sub--item">
+                                                            <a href="products-list.html" class="products-filter__sub--link">
+                                                                <span>Калькулятор 3 (1)</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="products-filter__sub--item">
+                                                            <a href="products-list.html" class="products-filter__sub--link">
+                                                                <span>Калькулятор 3 (2)</span>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="products-filter__sub--item">
+                                                <a href="products-list.html" class="products-filter__sub--link">
+                                                    <span>Калькулятор 4</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="products-filter__li">
+                                    <a href="#" class="products-filter__link">
+                                        <span>
+                                            Карандаши
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="products-filter__li">
+                                    <a href="#" class="products-filter__link">
+                                        <span>
+                                            Лупа
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="products-filter__li">
+                                    <a href="#" class="products-filter__link">
+                                        <span>
+                                            Маркеры
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="products-filter__li">
+                                    <a href="#" class="products-filter__link">
+                                        <span>
+                                            Ножницы
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="products-filter__li">
+                                    <a href="#" class="products-filter__link">
+                                        <span>
+                                            Ручки
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="products-filter__li">
+                                    <a href="#" class="products-filter__link">
+                                        <span>
+                                            Фломастеры
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="products-filter__li">
+                                    <a href="#" class="products-filter__link">
+                                        <span>
+                                            Ценники
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="products-filter__li">
+                                    <a href="#" class="products-filter__link">
+                                        <span>
+                                            Школьные принадлежности
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="products-filter__li">
+                                    <a href="#" class="products-filter__link">
+                                        <span>
+                                            Товары для офиса
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                    <button class="products-filter__popup--close-btn _icon-x"></button>
+                </div>
+            </div>
+            @@include("html/products/_products-with-categories.html", {
+                "class": 'products-list__block',
+            })
+        </div>
+    </section>
+</div>
+
+@@include("html/_footer.html")

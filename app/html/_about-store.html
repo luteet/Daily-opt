@@ -1,0 +1,37 @@
+<section class="@@class about-store">
+    <div class="about-store__container _container">
+        <div class="about-store__body">
+            <div class="about-store__image">
+                <picture>
+                    <source srcset="img/about-store/image.webp" type="image/webp">
+                    <img src="img/about-store/image.png" alt="" width="300" class="about-store__image--img">
+                </picture>
+            </div>
+            <div class="about-store__info">
+                <h2 class="about-store__title _section-title">
+                    О магазине
+                </h2>
+                <div class="about-store__text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                    <p>
+                        <strong>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+                        </strong>
+                    </p>
+                </div>
+            </div>
+            <div class="about-store__advantages advantages">
+                <ul class="advantages__list">
+                    @@loop("advantages/_advantages-item.html", [
+                        {"icon": '1', "title": 'Доставка товара по Украине'},
+                        {"icon": '2', "title": 'Гарантия качества и возврата'},
+                        {"icon": '3', "title": 'Скидки и бонусная система для опта'},
+                        {"icon": '4', "title": 'Большой ассортимент и удобство заказа'},
+                    ])
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>

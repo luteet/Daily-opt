@@ -1,0 +1,168 @@
+@@include("html/_header.html")
+
+<div class="wrapper">
+    <div class="page-header _section-pt">
+        <div class="page-header__container _container">
+            @@include("html/categories/_categories-btn.html")
+            @@include("html/categories/_categories.html")
+        </div>
+    </div>
+    <section class="contact-info _section-pt">
+        <div class="contact-info__container _container">
+            <div class="contact-info__body _section-body">
+                <h2 class="contact-info__title _section-title _extra-bold _color-dark">
+                    Контактная информация
+                </h2>
+                <div class="contact-info__row">
+                    <ul class="contact-info__row-list">
+                        <li class="contact-info__row-item">
+                            <div class="contact-info__row-item--body">
+                                <div class="contact-info__row-item--icon">
+                                    <img src="img/contact-info/icon-1.svg" width="48" alt="" class="contact-info__row-item--img">
+                                </div>
+                                <div class="contact-info__row-item--info">
+                                    <ul class="contact-info__row-item--list">
+                                        <li class="contact-info__row-item--li">
+                                            <b class="contact-info__row-item--name">
+                                                Пн:
+                                            </b>
+                                            <span class="contact-info__row-item--value">
+                                                06:00-15:00
+                                            </span>
+                                        </li>
+                                        <li class="contact-info__row-item--li">
+                                            <b class="contact-info__row-item--name">
+                                                Чт:
+                                            </b>
+                                            <span class="contact-info__row-item--value">
+                                                06:00-15:00
+                                            </span>
+                                        </li>
+                                        <li class="contact-info__row-item--li">
+                                            <b class="contact-info__row-item--name">
+                                                Вт:
+                                            </b>
+                                            <span class="contact-info__row-item--value">
+                                                06:00-15:00
+                                            </span>
+                                        </li>
+                                        <li class="contact-info__row-item--li">
+                                            <b class="contact-info__row-item--name">
+                                                Сб:
+                                            </b>
+                                            <span class="contact-info__row-item--value">
+                                                06:00-15:00
+                                            </span>
+                                        </li>
+                                        <li class="contact-info__row-item--li">
+                                            <b class="contact-info__row-item--name">
+                                                Ср:
+                                            </b>
+                                            <span class="contact-info__row-item--value">
+                                                06:00-15:00
+                                            </span>
+                                        </li>
+                                        <li class="contact-info__row-item--li">
+                                            <b class="contact-info__row-item--name">
+                                                Вс:
+                                            </b>
+                                            <span class="contact-info__row-item--value">
+                                                06:00-15:00
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contact-info__row-item">
+                            <div class="contact-info__row-item--body">
+                                <div class="contact-info__row-item--icon">
+                                    <img src="img/contact-info/icon-2.svg" width="48" alt="" class="contact-info__row-item--img">
+                                </div>
+                                <div class="contact-info__row-item--info">
+                                    <span class="contact-info__row-item--span">
+                                        65000, Украина, Одесская область,
+                                        Одесса, ул. Фабричная
+                                    </span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contact-info__row-item">
+                            <div class="contact-info__row-item--body">
+                                <div class="contact-info__row-item--icon">
+                                    <img src="img/contact-info/icon-3.svg" width="48" alt="" class="contact-info__row-item--img">
+                                </div>
+                                <div class="contact-info__row-item--info">
+                                    <a href="tel+0632200398" class="contact-info__row-item--link">
+                                        <b>063 220 03 98</b>
+                                    </a>
+                                    <br>
+                                    <a href="#" class="contact-info__row-item--link">
+                                        <span class="contact-info__row-item--span">
+                                            logo@4eg.ru
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <form action="#" class="contact-info__form">
+                    <div class="contact-info__form--body">
+                        <h3 class="contact-info__form--title _section-title _extra-bold _min _color-dark">
+                            Написать нам сообщение:
+                        </h3>
+                        <fieldset class="contact-info__fieldset">
+                            <label class="contact-info__label">
+                                <legend class="contact-info__legend _required">
+                                    Ваше Имя Фамилия
+                                </legend>
+                                <input type="text" name="name" placeholder="Введите.." class="contact-info__input _input" required>
+                            </label>
+                            <label class="contact-info__label">
+                                <legend class="contact-info__legend _required">
+                                    Контактный телефон
+                                </legend>
+                                <input type="text" name="tel" placeholder="Введите.." class="contact-info__input _input" required>
+                            </label>
+                            <label class="contact-info__label">
+                                <legend class="contact-info__legend">
+                                    Номер заказа (не обязательно)
+                                </legend>
+                                <input type="text" name="order-number" placeholder="Введите.." class="contact-info__input _input">
+                            </label>
+                            <label class="contact-info__label">
+                                <legend class="contact-info__legend _required">
+                                    E-mail адрес
+                                </legend>
+                                <input type="text" name="e-mail" placeholder="Введите.." class="contact-info__input _input" required>
+                            </label>
+                            <label class="contact-info__label _large">
+                                <legend class="contact-info__legend">
+                                    Ваше сообщение
+                                </legend>
+                                <textarea placeholder="Напишите свое сообщение" name="message" rows="10" class="contact-info__textarea _input"></textarea>
+                            </label>
+                        </fieldset>
+                        <fieldset class="contact-info__fieldset contact-info__footer">
+                            <button class="contact-info__submit _btn _accent" type="submit">
+                                Отправить сообщение
+                            </button>
+                            <div class="contact-info__check checkbox">
+                                <input type="checkbox" id="form-check" class="checkbox__input" required>
+                                <label for="form-check" class="checkbox__label">
+                                    <span class="checkbox__label--icon"></span>
+                                    <span class="checkbox__label--text">
+                                        Согласен на обработку данных
+                                    </span>
+                                </label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+
+@@include("html/_footer.html")

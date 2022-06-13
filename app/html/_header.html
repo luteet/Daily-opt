@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="offset-check-js"></div>
+    <header class="header">
+        <div class="header__container _container">
+            <nav class="header__nav">
+                <div class="header__nav--body">
+                    <ul class="header__nav--list">
+                        <li class="header__nav--item">
+                            <a href="about-store.html" class="header__nav--link">
+                                О магазине
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="delivery-pay.html" class="header__nav--link">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="guarantees.html" class="header__nav--link">
+                                Гарантии
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="faq.html" class="header__nav--link">
+                                FAQ (Вопрос - ответ)
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="cooperation.html" class="header__nav--link">
+                                Сотрудничество
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="contact-info.html" class="header__nav--link">
+                                Контактная информация
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header__nav--favorite"></div>
+                    <div class="header__nav--tel"></div>
+                    <div class="header__nav--account">
+                        <div class="header__account">
+                            <a href="#" class="header__account--link _btn _accent">
+                                Регистрация
+                            </a>
+                            <a href="#" class="header__account--link _btn _transparent">
+                                Войти
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__nav--footer">
+                    <button class="header__nav--active-burger _burger _burger-active" aria-label="Закрыть меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+            <nav class="header__nav-desktop">
+                <div class="header__nav-desktop--body">
+                    <ul class="header__nav-desktop--list">
+                        <li class="header__nav-desktop--block">
+                            <div class="header__logo">
+                                <a href="index.html" class="header__logo--link">
+                                    <img src="img/logo.svg" alt="" width="200" class="header__logo--img">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="header__nav-desktop--block">
+                            <div class="header__search">
+                                <button type="button" class="header__search--open-popup">
+                                    <span class="header__search--icon _icon-search"></span>
+                                </button>
+                                <div class="header__search--popup">
+                                    <div class="header__search--body">
+                                        <form action="#" class="header__search--form">
+                                            <fieldset class="header__search--fieldset">
+                                                <input type="text" placeholder="Поиск" name="search" class="header__search--input">
+                                                <button class="header__search--submit" type="submit">
+                                                    <span class="header__search--icon _icon-search"></span>
+                                                </button>
+                                            </fieldset>
+                                        </form>
+                                        <div class="header__search--result header__search-result"> <!-- + _active -->
+                                            <h2 class="header__search-result--title">
+                                                Перейти в категорию
+                                            </h2>
+                                            <ul class="header__search-result--list">
+                                                <li class="header__search-result--item">
+                                                    <a href="#" class="header__search-result--link">
+                                                        <span class="header__search-result--icon" style="--bg: #CEDDFF">
+                                                            <picture>
+                                                                <source srcset="img/categories/image-2.webp" type="image/webp">
+                                                                <img src="img/categories/image-2.png" alt="" width="16" class="header__search-result--img">
+                                                            </picture>
+                                                        </span>
+                                                        <span class="header__search-result--text">
+                                                            Бумажная продукция
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="header__search-result--item">
+                                                    <a href="#" class="header__search-result--link">
+                                                        <span class="header__search-result--icon" style="--bg: #CEDDFF">
+                                                            <picture>
+                                                                <source srcset="img/categories/image-2.webp" type="image/webp">
+                                                                <img src="img/categories/image-2.png" alt="" width="16" class="header__search-result--img">
+                                                            </picture>
+                                                        </span>
+                                                        <span class="header__search-result--text">
+                                                            Бумажная продукция
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-desktop--block">
+                            <div class="header__tel _append-elem" data-append-to=".header__nav--tel">
+                                <a href="tel:0800171917" class="header__tel--link">
+                                    <span class="header__tel--icon _icon-phone"></span>
+                                    0 800 171 917
+                                </a>
+                            </div>
+                        </li>
+                        <!-- <li class="header__nav-desktop--block">
+                            <div class="header__favorite _append-elem" data-append-to=".header__nav--favorite">
+                                <a href="favorite-page.html" class="header__favorite--link header__link _none-adapt">
+                                    <span class="header__favorite--icon header__link--icon _icon-favorite" style="--color: #D1D0DC"></span>
+                                    <span class="header__favorite--info header__link--info">
+                                        <strong class="header__favorite--name header__link--name">Избранное</strong><br>
+                                        <span class="header__favorite--value header__link--value">На потом</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </li> -->
+                        <li class="header__nav-desktop--block">
+                            <div class="header__cart">
+                                <a href="cart-page.html" class="header__cart--link header__link">
+                                    <span class="header__cart--icon header__link--icon _icon-cart" style="--color: #F8D271"></span>
+                                    <span class="header__cart--info header__link--info">
+                                        <strong class="header__cart--name header__link--name">Корзина</strong><br>
+                                        <span class="header__cart--value header__link--value">Пока пуста</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="header__nav-desktop--block _account-nav-block">
+                            <div class="header__account">
+                                <a href="#" class="header__account--link _btn _accent">
+                                    Регистрация
+                                </a>
+                                <a href="#" class="header__account--link _btn _transparent">
+                                    Войти
+                                </a>
+                            </div>
+                        </li>
+                        <li class="header__nav-desktop--block _none-nav-block">
+                            <button class="header__burger _burger" aria-label="Открыть меню">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+

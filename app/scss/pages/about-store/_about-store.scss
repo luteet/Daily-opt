@@ -1,0 +1,152 @@
+.about-store {
+    
+    // .about-store__container
+
+    &__container {
+    }
+
+    // .about-store__body
+
+    &__body {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        background-color: var(--white);
+        border-radius: var(--br);
+
+        padding: 25px 5px 36px 5px;
+        @include _768 {
+            padding: 65px 77px 36px 77px;
+        }
+
+    }
+
+    // .about-store__image
+
+    &__image {
+        flex: 0 1 100%;
+        text-align: center;
+        margin-bottom: 17px;
+        @include _768 {
+            flex: 0 1 41.75%;
+            margin-bottom: 0;
+        }
+        // .about-store__image--img
+
+        &--img {
+            max-width: 500px;
+            width: 100%;
+        }
+    }
+
+    // .about-store__info
+
+    &__info {
+        flex: 0 1 100%;
+        
+        padding-left: 21px; padding-right: 21px;
+        
+        @include _768 {
+            flex: 0 1 50%;
+            max-width: 527px;
+            padding-left: 30px; padding-right: 0;
+        }
+    }
+
+    // .about-store__title
+
+    &__title {
+        font-weight: 800;
+    }
+
+    // .about-store__text
+
+    &__text {
+        line-height: 125%;
+        padding-top: 15px;
+        @include _768 {
+            padding-top: 25px;
+        }
+        color: var(--accent-3);
+        & p {
+            padding: 9px 0;
+            
+        }
+        & strong {
+            color: var(--black);       
+        }
+    }
+
+    // .about-store__advantages
+
+    &__advantages {
+    }
+}
+
+.advantages {
+
+    margin-top: 37px;
+    @include _768 {
+        margin-top: 73px;
+    }
+
+    border-radius: 24px;
+    border: 1px dashed var(--light-3);
+
+    // .advantages__list
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+        @include _768 {
+            padding: 15px 30px;
+        }
+    }
+
+    // .advantages__item
+
+    &__item {
+        flex: 1 1 100%;
+        min-width: 250px;
+        @include _768 {
+            flex: 0 1 50%;
+        }
+        @media(min-width: 1180px) {
+            flex: 0 1 25%;
+        }
+        
+        padding: 15px 5px;
+
+        display: flex;
+        align-items: center;
+
+        // .advantages__item--icon
+
+        &--icon {
+            flex: 0 0 58px;
+            width: 58px; height: 58px;
+            border-radius: 50%;
+            border: 1px solid var(--gray);
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            margin-right: 13px;
+        }
+
+        // .advantages__item--img
+
+        &--img {
+        }
+
+        // .advantages__item--title
+
+        &--title {
+            line-height: 108%;
+            font-size: 1.125rem;
+        }
+    }
+}

@@ -1,0 +1,184 @@
+    @@include("html/_header.html")
+
+    <div class="wrapper">
+      <section class="intro">
+        <div class="intro__container _container">
+          <div class="intro__slider swiper">
+            <div class="intro__slider--wrapper swiper-wrapper">
+              <div class="intro__slider--slide swiper-slide">
+                <div class="intro__body _margin-pt">
+                  <div class="intro__bg">
+                    <div class="intro__bg--image">
+                      <picture>
+                        <source srcset="img/main-page/intro/intro-bg.webp" media="(min-width: 500px)" type="image/webp">
+                        <source srcset="img/main-page/intro/intro-bg-mob.webp" type="image/webp">
+                        <img src="img/main-page/intro/intro-bg.jpg" alt="" width="0" loading="lazy"
+                          class="intro__bg--img">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="intro__info">
+                    <h1 class="intro__title _main-title">
+                      Химия для дома по выгодным ценам
+                    </h1>
+                    <a href="#" class="intro__btn">
+                      <img src="img/icons/fire.svg" width="30" alt="" class="intro__btn--icon">
+                      вперед
+                    </a>
+                  </div>
+                  <div class="intro__image">
+                    <picture>
+                      <source srcset="img/main-page/intro/image.png" media="(min-width: 500px)" type="image/webp">
+                      <source srcset="img/main-page/intro/image-mob.png" type="image/webp">
+                      <img src="img/main-page/intro/image.png" alt="" width="300" class="intro__image--img">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="intro__slider--slide swiper-slide">
+                <div class="intro__body _margin-pt">
+                  <div class="intro__bg">
+                    <div class="intro__bg--image">
+                      <picture>
+                        <source srcset="img/main-page/intro/intro-bg.webp" media="(min-width: 500px)" type="image/webp">
+                        <source srcset="img/main-page/intro/intro-bg-mob.webp" type="image/webp">
+                        <img src="img/main-page/intro/intro-bg.jpg" alt="" width="0" loading="lazy"
+                          class="intro__bg--img">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="intro__info">
+                    <h1 class="intro__title _main-title">
+                      Химия для дома по выгодным ценам
+                    </h1>
+                    <a href="#" class="intro__btn">
+                      <img src="img/icons/fire.svg" width="30" alt="" class="intro__btn--icon">
+                      вперед
+                    </a>
+                  </div>
+                  <div class="intro__image">
+                    <picture>
+                      <source srcset="img/main-page/intro/image.png" media="(min-width: 500px)" type="image/webp">
+                      <source srcset="img/main-page/intro/image-mob.png" type="image/webp">
+                      <img src="img/main-page/intro/image.png" alt="" width="300" class="intro__image--img">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="intro__slider--slide swiper-slide">
+                <div class="intro__body _margin-pt">
+                  <div class="intro__bg">
+                    <div class="intro__bg--image">
+                      <picture>
+                        <source srcset="img/main-page/intro/intro-bg.webp" media="(min-width: 500px)" type="image/webp">
+                        <source srcset="img/main-page/intro/intro-bg-mob.webp" type="image/webp">
+                        <img src="img/main-page/intro/intro-bg.jpg" alt="" width="0" loading="lazy"
+                          class="intro__bg--img">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="intro__info">
+                    <h1 class="intro__title _main-title">
+                      Химия для дома по выгодным ценам
+                    </h1>
+                    <a href="#" class="intro__btn">
+                      <img src="img/icons/fire.svg" width="30" alt="" class="intro__btn--icon">
+                      вперед
+                    </a>
+                  </div>
+                  <div class="intro__image">
+                    <picture>
+                      <source srcset="img/main-page/intro/image.png" media="(min-width: 500px)" type="image/webp">
+                      <source srcset="img/main-page/intro/image-mob.png" type="image/webp">
+                      <img src="img/main-page/intro/image.png" alt="" width="300" class="intro__image--img">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="intro__slider--nav">
+              <button class="intro__slider--arrow swiper-button-next"></button>
+              <button class="intro__slider--arrow swiper-button-prev"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-page-categories _section-pt">
+        <div class="main-page-categories__container _container">
+          @@include("html/categories/_categories-list.html", {
+          "class": 'main-page-categories__block'
+          })
+        </div>
+      </section>
+      <section class="card-categories _section-pt">
+        <div class="card-categories__container _container">
+          <h2 class="card-categories__title _section-title">
+            Категории
+          </h2>
+          <ul class="card-categories__list">
+            @@loop("html/main-page/_card-categories-item.html", [
+              {},
+              {},
+              {},
+              {},
+              {},
+              {},
+            ])
+          </ul>
+        </div>
+      </section>
+      <section class="main-page-products _section-pt">
+        <div class="main-page-products__container _container">
+          <h2 class="main-page-products__title _section-title">
+            Продукция
+          </h2>
+          <form action="#" class="main-page-products__sort">
+            <div class="main-page-products__sort--body">
+              <fieldset class="main-page-products__fieldset">
+                <div class="main-page-products__sort-item">
+                  <input type="radio" id="sort-featured" name="sort" value="featured"
+                    class="main-page-products__input-radio" checked>
+                  <label for="sort-featured" class="main-page-products__label" style="--color: #FF1C60;">
+                    <span class="main-page-products__icon _icon-favorite"></span>
+                    Рекомендуемые
+                  </label>
+                </div>
+                <div class="main-page-products__sort-item">
+                  <input type="radio" id="sort-sales-leaders" name="sort" value="sales-leaders"
+                    class="main-page-products__input-radio">
+                  <label for="sort-sales-leaders" class="main-page-products__label" style="--color: #776BEB;">
+                    <span class="main-page-products__icon _icon-fire"></span>
+                    Лидеры продаж
+                  </label>
+                </div>
+                <div class="main-page-products__sort-item">
+                  <input type="radio" id="sort-new" name="sort" value="new" class="main-page-products__input-radio">
+                  <label for="sort-new" class="main-page-products__label" style="--color: #FFCE32;">
+                    <span class="main-page-products__icon _icon-star"></span>
+                    Новинки
+                  </label>
+                </div>
+                <div class="main-page-products__sort-item">
+                  <input type="radio" id="sort-stock" name="sort" value="stock" class="main-page-products__input-radio">
+                  <label for="sort-stock" class="main-page-products__label" style="--color: #3BDB8E;">
+                    <span class="main-page-products__icon _icon-stock"></span>
+                    Акции
+                  </label>
+                </div>
+                <div class="main-page-products__sort-item">
+                  <div style="width: 50px; height: 50px;"></div>
+                </div>
+              </fieldset>
+            </div>
+          </form>
+          @@include("html/products/_products.html", {
+            "class": 'main-page-products__block',
+          })
+        </div>
+      </section>
+      @@include("html/_about-store.html", {
+        "class": 'main-page-about-store _section-large-pt',
+      })
+    </div>
+
+    @@include("html/_footer.html")

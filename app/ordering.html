@@ -1,0 +1,207 @@
+@@include("html/_header.html")
+
+<div class="wrapper">
+    <div class="page-header _section-pt">
+        <div class="page-header__container _container">
+            <div class="page-address">
+                <div class="page-address__body">
+                    <span class="page-address__icon _icon-house"></span>
+                    <ul class="page-address__list">
+                        <li class="page-address__item">
+                            <a href="#" class="page-address__link">
+                                Корзина покупок
+                            </a>
+                        </li>
+                        <li class="page-address__item">
+                            <a href="#" class="page-address__link">
+                                Оформление заказа
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            @@include("html/categories/_categories-btn.html")
+            @@include("html/categories/_categories.html")
+        </div>
+    </div>
+    <section class="ordering _section-pt">
+        <div class="ordering__container _container">
+            <form action="#" class="ordering__body _section-body">
+                <h2 class="ordering__title _section-title _min">
+                    Оформление заказа
+                </h2>
+                <div class="ordering__product-col">
+                    <ul class="ordering__product-list _all-price-list">
+                        @@loop("html/cart/_cart-item.html", [
+                            {"image": '1', "bg": '#FFDA93', "class": 'ordering__product-item'},
+                            {"image": '2', "bg": '#7D70FF', "class": 'ordering__product-item'},
+                            {"image": '3', "bg": '#8BFFC7', "class": 'ordering__product-item'},
+                            {"image": '4', "bg": '#FFDA93', "class": 'ordering__product-item'},
+                        ])
+                    </ul>
+                    <div class="cart-page__block--all-price ordering__product-all-price">
+                        <span class="cart-page__block--all-price-name">
+                            Общая Сумма:
+                        </span>
+                        <strong class="cart-page__block--all-price-value _all-price-value">
+                            0
+                        </strong>
+                    </div>
+                </div>
+                <div class="ordering__info">
+                    <fieldset class="ordering__info--fieldset">
+                        <h3 class="ordering__info--title _title">
+                            Способ оплаты:
+                        </h3>
+                        <div class="ordering__info--label">
+                            <select 
+                                class="ordering__info--select _select"
+                                name="payment-method" 
+                                data-placeholder="Выберите способ оплаты">
+                                <option value="payment-method-1">Способ №1</option>
+                                <option value="payment-method-2">Способ №2</option>
+                                <option value="payment-method-3">Способ №3</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset class="ordering__info--fieldset">
+                        <h3 class="ordering__info--title _title">
+                            Способ доставки:
+                        </h3>
+                        <div class="ordering__info--label _select-body">
+                            <select 
+                                class="ordering__info--select _select _tab-select"
+                                name="payment-method" 
+                                data-placeholder="Выберите способ оплаты">
+                                <option value="delivery-method-1" selected data-image="img/delivery-icons/icon-1.png">Способ №1</option>
+                                <option value="delivery-method-2" data-image="img/delivery-icons/icon-2.png">Способ №2</option>
+                                <option value="delivery-method-3" data-image="img/delivery-icons/icon-3.png">Способ №3</option>
+                            </select>
+                        </div>
+                        <div class="ordering__info--min-block _tab-select-block _active" id="delivery-method-1">
+                            <div class="ordering__info--label">
+                                <select 
+                                    class="ordering__info--select _select"
+                                    name="department" 
+                                    data-replace="jselect" 
+                                    data-locale="ru"  
+                                    data-placeholder="Выберите отделение">
+                                    <option value="department-1">Отделение №1</option>
+                                    <option value="department-2">Отделение №2</option>
+                                    <option value="department-3">Отделение №3</option>
+                                </select>
+                            </div>
+                            <div class="ordering__info--label">
+                                <select 
+                                    class="ordering__info--select _select"
+                                    name="town" 
+                                    data-replace="jselect" 
+                                    data-locale="ru"  
+                                    data-placeholder="Выберите город">
+                                    <option value="town-1">Город №1</option>
+                                    <option value="town-2">Город №2</option>
+                                    <option value="town-3">Город №3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="ordering__info--min-block _tab-select-block" id="delivery-method-2" style="display: none;">
+                            <div class="ordering__info--label">
+                                <select 
+                                    class="ordering__info--select _select"
+                                    name="department" 
+                                    data-replace="jselect" 
+                                    data-locale="ru"  
+                                    data-placeholder="Выберите отделение">
+                                    <option value="department-1">Отделение №1</option>
+                                    <option value="department-2">Отделение №2</option>
+                                    <option value="department-3">Отделение №3</option>
+                                </select>
+                            </div>
+                            <div class="ordering__info--label">
+                                <select 
+                                    class="ordering__info--select _select"
+                                    name="town" 
+                                    data-replace="jselect" 
+                                    data-locale="ru"  
+                                    data-placeholder="Выберите город">
+                                    <option value="town-1">Город №1</option>
+                                    <option value="town-2">Город №2</option>
+                                    <option value="town-3">Город №3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="ordering__info--min-block _tab-select-block" id="delivery-method-3" style="display: none;">
+                            <div class="ordering__info--label">
+                                <select 
+                                    class="ordering__info--select _select"
+                                    name="department" 
+                                    data-replace="jselect" 
+                                    data-locale="ru"  
+                                    data-placeholder="Выберите отделение">
+                                    <option value="department-1">Отделение №1</option>
+                                    <option value="department-2">Отделение №2</option>
+                                    <option value="department-3">Отделение №3</option>
+                                </select>
+                            </div>
+                            <div class="ordering__info--label">
+                                <select 
+                                    class="ordering__info--select _select"
+                                    name="town" 
+                                    data-replace="jselect" 
+                                    data-locale="ru"  
+                                    data-placeholder="Выберите город">
+                                    <option value="town-1">Город №1</option>
+                                    <option value="town-2">Город №2</option>
+                                    <option value="town-3">Город №3</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="ordering__info--fieldset">
+                        <h3 class="ordering__info--title _title">
+                            Информация о получателе:
+                        </h3>
+                        <label class="ordering__info--label">
+                            <h4 class="ordering__info--name">
+                                Имя
+                            </h4>
+                            <input type="text" name="first-name" placeholder="Введите Имя" required class="ordering__info--input _input">
+                        </label>
+                        <label class="ordering__info--label">
+                            <h4 class="ordering__info--name">
+                                Фамилия
+                            </h4>
+                            <input type="text" name="last-name" placeholder="Введите Фамилию" required class="ordering__info--input _input">
+                        </label>
+                        <label class="ordering__info--label">
+                            <h4 class="ordering__info--name">
+                                Телефон
+                            </h4>
+                            <input type="text" name="tel" placeholder="Введите Телефон" required class="ordering__info--input _input">
+                        </label>
+                        <label class="ordering__info--label">
+                            <h4 class="ordering__info--name">
+                                E-mail
+                            </h4>
+                            <input type="text" name="e-mail" placeholder="Введите E-mail" required class="ordering__info--input _input">
+                        </label>
+                        <label class="ordering__info--label">
+                            <h4 class="ordering__info--name">
+                                Комментарий
+                            </h4>
+                            <textarea name="message" cols="30" rows="10" placeholder="Напишите свой комментарий" class="ordering__info--textarea _input"></textarea>
+                        </label>
+                    </fieldset>
+                    <fieldset class="ordering__info--footer">
+                        <button class="ordering__info--submit _btn _accent" type="submit">
+                            <img src="img/icons/document.png" width="22" alt="" class="ordering__info--submit-icon">
+                            Оформить заказ
+                        </button>
+                    </fieldset>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+@@include("html/_footer.html")

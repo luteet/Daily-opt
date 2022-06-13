@@ -1,0 +1,50 @@
+.cooperation {
+
+    // .cooperation__container
+
+    &__container {
+    }
+
+    // .cooperation__body
+
+    &__body {
+    }
+
+    // .cooperation__title
+
+    &__title {
+    }
+
+    // .cooperation__text
+
+    &__text {
+        padding-top: 20px;
+        font-size: 1rem;
+        @include _992 {
+            padding-top: 30px;
+            font-size: 1.125rem;
+        }
+        max-width: 822px;
+        color: var(--accent-light-2);
+        line-height: 108%;
+        & p {
+            padding: 7px 0;
+            @include _992 {
+                padding: 10px 0;
+            }
+        }
+        & ul {
+            margin: -5px 0;
+        }
+        & ul li {
+            line-height: 108%;
+            color: var(--accent-3);
+            padding: 7px 0 7px 7px;
+            
+            &::before {
+                content: '•';
+                margin-right: 7px;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+<div class="@@class categories">
+    <div class="categories__block _popup" id="categories-block">
+        <div class="categories__body swiper">
+            <ul class="categories__list swiper-wrapper">
+                @@loop("_categories-item.html", [
+                    {"image": '1', "title": 'Одноразовая посуда', "bg": '#FFCE32'},
+                    {"image": '2', "title": 'Бумажная продукция', "bg": '#CEDDFF'},
+                    {"image": '3', "title": 'Одноразовые пакеты', "bg": '#FFD6C9'},
+                    {"image": '4', "title": 'Мешки для мусора', "bg": '#84FFC4'},
+                    {"image": '5', "title": 'Упаковочный материал', "bg": '#776BEB'},
+                    {"image": '6', "title": 'Батарейки', "bg": '#FFF6D9'},
+                    {"image": '7', "title": 'Бытовая химия', "bg": '#C8F8F6'},
+                    {"image": '8', "title": 'Зажигалки', "bg": '#FF8989'},
+                    {"image": '9', "title": 'Электротовары', "bg": '#FFE799'},
+                    {"image": '10', "title": 'Для дома', "bg": '#99BCFF'},
+                ])
+            </ul>
+            <div class="categories__nav">
+                <button class="categories__nav--arrow _next swiper-button-next">
+                    <span class="categories__nav--icon _icon-arrow-to-right"></span>
+                </button>
+                <div class="categories__nav--side _next-side"></div>
+                <button class="categories__nav--arrow _prev swiper-button-prev">
+                    <span class="categories__nav--icon _icon-arrow-to-left"></span>
+                </button>
+                <div class="categories__nav--side _prev-side"></div>
+            </div>
+        </div>
+    </div>
+</div>

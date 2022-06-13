@@ -1,0 +1,30 @@
+<div class="@@class products">
+  <ul class="products__list">
+    @@loop("_products-item.html", [
+
+      {"image": '1', "bg": '#7D70FF'},
+      {"image": '2', "bg": '#7D70FF'},
+      {"image": '3', "bg": '#7D70FF'},
+      {"image": '4', "bg": '#7D70FF'},
+
+    ])
+    @@loop("_products-item-none.html", [
+
+      {"image": '1', "bg": '#8BFFC7'},
+      {"image": '2', "bg": '#8BFFC7'},
+      {"image": '3', "bg": '#8BFFC7'},
+      {"image": '4', "bg": '#8BFFC7'},
+
+    ])
+  </ul>
+  <div class="products__footer">
+    <button class="products__load-more _btn _margin-pb">
+      <span class="products__load-more--icon _icon-document"></span>
+      Посмотреть большее..
+    </button>
+  </div>
+  
+  @@include("../_pagination.html")
+
+
+</div>

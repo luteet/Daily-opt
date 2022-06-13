@@ -1,0 +1,42 @@
+@import 'mixin.scss';
+@import 'null.scss';
+@import 'libs.scss';
+@import 'select';
+@import 'vars.scss';
+@import 'global.scss';
+@import 'font';
+@import 'popup';
+@import 'products';
+@import 'form';
+
+
+@import 'main-sections/header';
+
+
+@import 'pages/main-page/intro';
+@import 'pages/main-page/categories';
+@import 'pages/main-page/card-categories';
+@import 'pages/main-page/products';
+
+@import 'pages/product-page/product-page';
+@import 'like-products';
+
+@import 'pages/about-store/about-store';
+
+@import 'pages/cart-page/cart-page';
+
+@import 'pages/ordering/ordering';
+
+@import 'pages/delivery-pay/delivery-pay';
+
+@import 'pages/guarantees/guarantees';
+
+@import 'pages/faq/faq';
+
+@import 'pages/cooperation/cooperation';
+
+@import 'pages/contact-info/contact-info';
+
+@import 'pages/user-form/user-form';
+
+@import 'main-sections/footer';

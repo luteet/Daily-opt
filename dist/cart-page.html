@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <div class="offset-check-js"></div>
+    <header class="header">
+        <div class="header__container _container">
+            <nav class="header__nav">
+                <div class="header__nav--body">
+                    <ul class="header__nav--list">
+                        <li class="header__nav--item">
+                            <a href="about-store.html" class="header__nav--link">
+                                О магазине
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="delivery-pay.html" class="header__nav--link">
+                                Доставка и оплата
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="guarantees.html" class="header__nav--link">
+                                Гарантии
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="faq.html" class="header__nav--link">
+                                FAQ (Вопрос - ответ)
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="cooperation.html" class="header__nav--link">
+                                Сотрудничество
+                            </a>
+                        </li>
+                        <li class="header__nav--item">
+                            <a href="contact-info.html" class="header__nav--link">
+                                Контактная информация
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header__nav--favorite"></div>
+                    <div class="header__nav--tel"></div>
+                    <div class="header__nav--account">
+                        <div class="header__account">
+                            <a href="#" class="header__account--link _btn _accent">
+                                Регистрация
+                            </a>
+                            <a href="#" class="header__account--link _btn _transparent">
+                                Войти
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__nav--footer">
+                    <button class="header__nav--active-burger _burger _burger-active" aria-label="Закрыть меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+            <nav class="header__nav-desktop">
+                <div class="header__nav-desktop--body">
+                    <ul class="header__nav-desktop--list">
+                        <li class="header__nav-desktop--block">
+                            <div class="header__logo">
+                                <a href="index.html" class="header__logo--link">
+                                    <img src="img/logo.svg" alt="" width="200" class="header__logo--img">
+                                </a>
+                            </div>
+                        </li>
+                        <li class="header__nav-desktop--block">
+                            <div class="header__search">
+                                <button type="button" class="header__search--open-popup">
+                                    <span class="header__search--icon _icon-search"></span>
+                                </button>
+                                <div class="header__search--popup">
+                                    <div class="header__search--body">
+                                        <form action="#" class="header__search--form">
+                                            <fieldset class="header__search--fieldset">
+                                                <input type="text" placeholder="Поиск" name="search" class="header__search--input">
+                                                <button class="header__search--submit" type="submit">
+                                                    <span class="header__search--icon _icon-search"></span>
+                                                </button>
+                                            </fieldset>
+                                        </form>
+                                        <div class="header__search--result header__search-result"> <!-- + _active -->
+                                            <h2 class="header__search-result--title">
+                                                Перейти в категорию
+                                            </h2>
+                                            <ul class="header__search-result--list">
+                                                <li class="header__search-result--item">
+                                                    <a href="#" class="header__search-result--link">
+                                                        <span class="header__search-result--icon" style="--bg: #CEDDFF">
+                                                            <picture>
+                                                                <source srcset="img/categories/image-2.webp" type="image/webp">
+                                                                <img src="img/categories/image-2.png" alt="" width="16" class="header__search-result--img">
+                                                            </picture>
+                                                        </span>
+                                                        <span class="header__search-result--text">
+                                                            Бумажная продукция
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="header__search-result--item">
+                                                    <a href="#" class="header__search-result--link">
+                                                        <span class="header__search-result--icon" style="--bg: #CEDDFF">
+                                                            <picture>
+                                                                <source srcset="img/categories/image-2.webp" type="image/webp">
+                                                                <img src="img/categories/image-2.png" alt="" width="16" class="header__search-result--img">
+                                                            </picture>
+                                                        </span>
+                                                        <span class="header__search-result--text">
+                                                            Бумажная продукция
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__nav-desktop--block">
+                            <div class="header__tel _append-elem" data-append-to=".header__nav--tel">
+                                <a href="tel:0800171917" class="header__tel--link">
+                                    <span class="header__tel--icon _icon-phone"></span>
+                                    0 800 171 917
+                                </a>
+                            </div>
+                        </li>
+                        <!-- <li class="header__nav-desktop--block">
+                            <div class="header__favorite _append-elem" data-append-to=".header__nav--favorite">
+                                <a href="favorite-page.html" class="header__favorite--link header__link _none-adapt">
+                                    <span class="header__favorite--icon header__link--icon _icon-favorite" style="--color: #D1D0DC"></span>
+                                    <span class="header__favorite--info header__link--info">
+                                        <strong class="header__favorite--name header__link--name">Избранное</strong><br>
+                                        <span class="header__favorite--value header__link--value">На потом</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </li> -->
+                        <li class="header__nav-desktop--block">
+                            <div class="header__cart">
+                                <a href="cart-page.html" class="header__cart--link header__link">
+                                    <span class="header__cart--icon header__link--icon _icon-cart" style="--color: #F8D271"></span>
+                                    <span class="header__cart--info header__link--info">
+                                        <strong class="header__cart--name header__link--name">Корзина</strong><br>
+                                        <span class="header__cart--value header__link--value">Пока пуста</span>
+                                    </span>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="header__nav-desktop--block _account-nav-block">
+                            <div class="header__account">
+                                <a href="#" class="header__account--link _btn _accent">
+                                    Регистрация
+                                </a>
+                                <a href="#" class="header__account--link _btn _transparent">
+                                    Войти
+                                </a>
+                            </div>
+                        </li>
+                        <li class="header__nav-desktop--block _none-nav-block">
+                            <button class="header__burger _burger" aria-label="Открыть меню">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+<div class="wrapper">
+    <div class="page-header _section-pt">
+        <div class="page-header__container _container">
+            <button class="@@class categories-btn _btn" data-id="categories-block">
+    <span class="categories-btn__icon _icon-burger"></span>
+    Категории
+</button>
+            <div class="@@class categories">
+    <div class="categories__block _popup" id="categories-block">
+        <div class="categories__body swiper">
+            <ul class="categories__list swiper-wrapper">
+                <li class="categories__item swiper-slide">
+    <a href="https://dailyopt.com.ua/desktops/tarelka-165" class="categories__link swiper-slide">
+        <div class="categories__image" style="--bg: #FFCE32">
+            <picture>
+                <source srcset="img/categories/image-1.webp" type="image/webp">
+                <img src="img/categories/image-1.png" alt="" width="63" class="categories__image--img">
+            </picture>
+        </div>
+        <h3 class="categories__name">
+            Одноразовая посуда
+        </h3>
+    </a>
+</li><li class="categories__item swiper-slide">
+    <a href="https://dailyopt.com.ua/desktops/tarelka-165" class="categories__link swiper-slide">
+        <div class="categories__image" style="--bg: #CEDDFF">
+            <picture>
+                <source srcset="img/categories/image-2.webp" type="image/webp">
+                <img src="img/categories/image-2.png" alt="" width="63" class="categories__image--img">
+            </picture>
+        </div>
+        <h3 class="categories__name">
+            Бумажная продукция
+        </h3>
+    </a>
+</li><li class="categories__item swiper-slide">
+    <a href="https://dailyopt.com.ua/desktops/tarelka-165" class="categories__link swiper-slide">
+        <div class="categories__image" style="--bg: #FFD6C9">
+            <picture>
+                <source srcset="img/categories/image-3.webp" type="image/webp">
+                <img src="img/categories/image-3.png" alt="" width="63" class="categories__image--img">
+            </picture>
+        </div>
+        <h3 class="categories__name">
+            Одноразовые пакеты
+        </h3>
+    </a>
+</li><li class="categories__item swiper-slide">
+    <a href="https://dailyopt.com.ua/desktops/tarelka-165" class="categories__link swiper-slide">
+        <div class="categories__image" style="--bg: #84FFC4">
+            <picture>
+                <source srcset="img/categories/image-4.webp" type="image/webp">
+                <img src="img/categories/image-4.png" alt="" width="63" class="categories__image--img">
+            </picture>
+        </div>
+        <h3 class="categories__name">
+            Мешки для мусора
+        </h3>
+    </a>
+</li><li class="categories__item swiper-slide">
+    <a href="https://dailyopt.com.ua/desktops/tarelka-165" class="categories__link swiper-slide">
+        <div class="categories__image" style="--bg: #776BEB">
+            <picture>
+                <source srcset="img/categories/image-5.webp" type="image/webp">
+                <img src="img/categories/image-5.png" alt="" width="63" class="categories__image--img">
+            </picture>
+        </div>
+        <h3 class="categories__name">
+            Упаковочный материал
+        </h3>
+    </a>
+</li><li class="categories__item swiper-slide">
+    <a href="https://dailyopt.com.ua/desktops/tarelka-165" class="categories__link swiper-slide">
+        <div class="categories__image" style="--bg: #FFF6D9">
+            <picture>
+                <source srcset="img/categories/image-6.webp" type="image/webp">
+                <img src="img/categories/image-6.png" alt="" width="63" class="categories__image--img">
+            </picture>
+        </div>
+        <h3 class="categories__name">
+            Батарейки
+        </h3>
+    </a>
+</li><li class="categories__item swiper-slide">
+    <a href="https://dailyopt.com.ua/desktops/tarelka-165" class="categories__link swiper-slide">
+        <div class="categories__image" style="--bg: #C8F8F6">
+            <picture>
+                <source srcset="img/categories/image-7.webp" type="image/webp">
+                <img src="img/categories/image-7.png" alt="" width="63" class="categories__image--img">
+            </picture>
+        </div>
+        <h3 class="categories__name">
+            Бытовая химия
+        </h3>
+    </a>
+</li><li class="categories__item swiper-slide">
+    <a href="https://dailyopt.com.ua/desktops/tarelka-165" class="categories__link swiper-slide">
+        <div class="categories__image" style="--bg: #FF8989">
+            <picture>
+                <source srcset="img/categories/image-8.webp" type="image/webp">
+                <img src="img/categories/image-8.png" alt="" width="63" class="categories__image--img">
+            </picture>
+        </div>
+        <h3 class="categories__name">
+            Зажигалки
+        </h3>
+    </a>
+</li><li class="categories__item swiper-slide">
+    <a href="https://dailyopt.com.ua/desktops/tarelka-165" class="categories__link swiper-slide">
+        <div class="categories__image" style="--bg: #FFE799">
+            <picture>
+                <source srcset="img/categories/image-9.webp" type="image/webp">
+                <img src="img/categories/image-9.png" alt="" width="63" class="categories__image--img">
+            </picture>
+        </div>
+        <h3 class="categories__name">
+            Электротовары
+        </h3>
+    </a>
+</li><li class="categories__item swiper-slide">
+    <a href="https://dailyopt.com.ua/desktops/tarelka-165" class="categories__link swiper-slide">
+        <div class="categories__image" style="--bg: #99BCFF">
+            <picture>
+                <source srcset="img/categories/image-10.webp" type="image/webp">
+                <img src="img/categories/image-10.png" alt="" width="63" class="categories__image--img">
+            </picture>
+        </div>
+        <h3 class="categories__name">
+            Для дома
+        </h3>
+    </a>
+</li>
+            </ul>
+            <div class="categories__nav">
+                <button class="categories__nav--arrow _next swiper-button-next">
+                    <span class="categories__nav--icon _icon-arrow-to-right"></span>
+                </button>
+                <div class="categories__nav--side _next-side"></div>
+                <button class="categories__nav--arrow _prev swiper-button-prev">
+                    <span class="categories__nav--icon _icon-arrow-to-left"></span>
+                </button>
+                <div class="categories__nav--side _prev-side"></div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <section class="cart-page _section-pt">
+        <div class="cart-page__container _container">
+            <form action="#" class="cart-page__body" style="min-height: 450px;">
+                <h2 class="cart-page__title _section-title _min">
+                    Ваша корзина
+                </h2>
+                <div class="cart-page__block">
+                    <div class="cart-page__block--wrapper">
+                        <ul class="cart-page__list _scrollbar _empty-list _all-price-list">
+                            <li class="cart-page__item cart-item _cart-product" data-article="1234" data-price="100">
+    <div class="cart-page__item--body cart-item__body">
+        <a href="product-page.html" class="cart-page__item--image cart-item__image" style="--bg: #FFDA93">
+            <picture>
+                <source srcset="img/products/image-1.webp" type="image/webp">
+                <img src="img/products/image-1.png" alt="" width="50" class="cart-page__item--img cart-item__image--img">
+            </picture>
+        </a>
+        <div class="cart-page__item--info cart-item__info">
+            <a href="product-page.html" class="cart-page__item--link cart-item__link">
+                <h3 class="cart-page__item--title cart-item__title _title" title="Гофрированный стакан бумажный 110мл Гофрированный стакан бумажный 110мл">
+                    Гофрированный стакан бумажный 110мл Lorem, ipsum dolor.
+                </h3>
+            </a>
+            <div class="cart-page__item--settings cart-item__settings product-settings">
+                <span class="cart-page__item--value cart-item__value" data-article="1234">
+                    Артикул: <b>1234</b>
+                </span>
+                <div class="product-settings__count product-count">
+                    <input type="number" readonly placeholder="0" value="30" data-step="30" data-aprice="2.84" data-currency="₴" name="count" class="product-count__input _input-count _product-count">
+                    <button type="button" class="product-count__arrow _to-up _input-count-up"></button>
+                    <button type="button" class="product-count__arrow _to-down _input-count-down"></button>
+                </div>
+                <span class="cart-page__item--value cart-page__item--price cart-item__value cart-item__price">
+                    Цена: <b class="_product-price" data-price="100">100</b>
+                </span>
+            </div>
+        </div>
+        <button class="cart-page__item--delete cart-item__delete _cart-product-delete _icon-x" type="button" title="Удалить товар из списка"></button>
+    </div>
+</li><li class="cart-page__item cart-item _cart-product" data-article="1234" data-price="100">
+    <div class="cart-page__item--body cart-item__body">
+        <a href="product-page.html" class="cart-page__item--image cart-item__image" style="--bg: #7D70FF">
+            <picture>
+                <source srcset="img/products/image-2.webp" type="image/webp">
+                <img src="img/products/image-2.png" alt="" width="50" class="cart-page__item--img cart-item__image--img">
+            </picture>
+        </a>
+        <div class="cart-page__item--info cart-item__info">
+            <a href="product-page.html" class="cart-page__item--link cart-item__link">
+                <h3 class="cart-page__item--title cart-item__title _title" title="Гофрированный стакан бумажный 110мл Гофрированный стакан бумажный 110мл">
+                    Гофрированный стакан бумажный 110мл Lorem, ipsum dolor.
+                </h3>
+            </a>
+            <div class="cart-page__item--settings cart-item__settings product-settings">
+                <span class="cart-page__item--value cart-item__value" data-article="1234">
+                    Артикул: <b>1234</b>
+                </span>
+                <div class="product-settings__count product-count">
+                    <input type="number" readonly placeholder="0" value="30" data-step="30" data-aprice="2.84" data-currency="₴" name="count" class="product-count__input _input-count _product-count">
+                    <button type="button" class="product-count__arrow _to-up _input-count-up"></button>
+                    <button type="button" class="product-count__arrow _to-down _input-count-down"></button>
+                </div>
+                <span class="cart-page__item--value cart-page__item--price cart-item__value cart-item__price">
+                    Цена: <b class="_product-price" data-price="100">100</b>
+                </span>
+            </div>
+        </div>
+        <button class="cart-page__item--delete cart-item__delete _cart-product-delete _icon-x" type="button" title="Удалить товар из списка"></button>
+    </div>
+</li><li class="cart-page__item cart-item _cart-product" data-article="1234" data-price="100">
+    <div class="cart-page__item--body cart-item__body">
+        <a href="product-page.html" class="cart-page__item--image cart-item__image" style="--bg: #8BFFC7">
+            <picture>
+                <source srcset="img/products/image-3.webp" type="image/webp">
+                <img src="img/products/image-3.png" alt="" width="50" class="cart-page__item--img cart-item__image--img">
+            </picture>
+        </a>
+        <div class="cart-page__item--info cart-item__info">
+            <a href="product-page.html" class="cart-page__item--link cart-item__link">
+                <h3 class="cart-page__item--title cart-item__title _title" title="Гофрированный стакан бумажный 110мл Гофрированный стакан бумажный 110мл">
+                    Гофрированный стакан бумажный 110мл Lorem, ipsum dolor.
+                </h3>
+            </a>
+            <div class="cart-page__item--settings cart-item__settings product-settings">
+                <span class="cart-page__item--value cart-item__value" data-article="1234">
+                    Артикул: <b>1234</b>
+                </span>
+                <div class="product-settings__count product-count">
+                    <input type="number" readonly placeholder="0" value="30" data-step="30" data-aprice="2.84" data-currency="₴" name="count" class="product-count__input _input-count _product-count">
+                    <button type="button" class="product-count__arrow _to-up _input-count-up"></button>
+                    <button type="button" class="product-count__arrow _to-down _input-count-down"></button>
+                </div>
+                <span class="cart-page__item--value cart-page__item--price cart-item__value cart-item__price">
+                    Цена: <b class="_product-price" data-price="100">100</b>
+                </span>
+            </div>
+        </div>
+        <button class="cart-page__item--delete cart-item__delete _cart-product-delete _icon-x" type="button" title="Удалить товар из списка"></button>
+    </div>
+</li><li class="cart-page__item cart-item _cart-product" data-article="1234" data-price="100">
+    <div class="cart-page__item--body cart-item__body">
+        <a href="product-page.html" class="cart-page__item--image cart-item__image" style="--bg: #FFDA93">
+            <picture>
+                <source srcset="img/products/image-4.webp" type="image/webp">
+                <img src="img/products/image-4.png" alt="" width="50" class="cart-page__item--img cart-item__image--img">
+            </picture>
+        </a>
+        <div class="cart-page__item--info cart-item__info">
+            <a href="product-page.html" class="cart-page__item--link cart-item__link">
+                <h3 class="cart-page__item--title cart-item__title _title" title="Гофрированный стакан бумажный 110мл Гофрированный стакан бумажный 110мл">
+                    Гофрированный стакан бумажный 110мл Lorem, ipsum dolor.
+                </h3>
+            </a>
+            <div class="cart-page__item--settings cart-item__settings product-settings">
+                <span class="cart-page__item--value cart-item__value" data-article="1234">
+                    Артикул: <b>1234</b>
+                </span>
+                <div class="product-settings__count product-count">
+                    <input type="number" readonly placeholder="0" value="30" data-step="30" data-aprice="2.84" data-currency="₴" name="count" class="product-count__input _input-count _product-count">
+                    <button type="button" class="product-count__arrow _to-up _input-count-up"></button>
+                    <button type="button" class="product-count__arrow _to-down _input-count-down"></button>
+                </div>
+                <span class="cart-page__item--value cart-page__item--price cart-item__value cart-item__price">
+                    Цена: <b class="_product-price" data-price="100">100</b>
+                </span>
+            </div>
+        </div>
+        <button class="cart-page__item--delete cart-item__delete _cart-product-delete _icon-x" type="button" title="Удалить товар из списка"></button>
+    </div>
+</li>
+                        </ul>
+                        <div class="cart-page__block--all-price">
+                            <span class="cart-page__block--all-price-name">
+                                Общая Сумма:
+                            </span>
+                            <strong class="cart-page__block--all-price-value _all-price-value">
+                                0
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="cart-page__block--footer">
+                        <a href="#" class="cart-page__block--link _btn">
+                            Продолжить покупки
+                        </a>
+                        <a href="ordering.html" class="cart-page__block--link _btn _accent">
+                            <img src="img/icons/document.png" width="22" alt="" class="cart-page__block--icon">
+                            Оформление заказа
+                        </a>
+                    </div>
+                </div>
+                <div class="cart-page__empty _empty-block" style="display: none; opacity: 0;">
+                    <div class="cart-page__empty--body _txt-center">
+                        <div class="cart-page__empty--image _accent">
+                            <picture>
+                                <source srcset="img/cart/none.webp" type="image/webp">
+                                <img src="img/cart/none.png" alt="" width="88" class="cart-page__empty--img">
+                            </picture>
+                        </div>
+                        <div class="cart-page__empty--text">
+                            Здесь пока что пусто..
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+
+<footer class="footer">
+  <div class="footer__container _container">
+    <div class="footer__logo">
+      <a href="index.html" class="footer__logo--link">
+        <img src="img/logo-light.svg" width="150" loading="lazy" alt="" class="footer__logo--img">
+      </a>
+      <div class="footer__logo--add _logo-add">
+        Доставка<br> за 3 дня
+      </div>
+      <div class="footer__logo--search footer__search">
+        <div class="footer__search--body">
+          <form action="#" class="footer__search--form">
+            <fieldset class="footer__search--fieldset">
+              <input type="text" placeholder="Поиск" name="search" class="footer__search--input">
+              <button class="footer__search--submit" type="submit">
+                <span class="footer__search--icon _icon-search"></span>
+              </button>
+            </fieldset>
+          </form>
+          <div class="footer__search--result footer__search-result">
+            <!-- + _active -->
+            <h2 class="footer__search-result--title">
+              Перейти в категорию
+            </h2>
+            <ul class="footer__search-result--list">
+              <li class="footer__search-result--item">
+                <a href="#" class="footer__search-result--link">
+                  <span class="footer__search-result--icon" style="--bg: #CEDDFF">
+                    <picture>
+                      <source srcset="img/categories/image-2.webp" type="image/webp">
+                      <img src="img/categories/image-2.png" alt="" width="16" class="footer__search-result--img">
+                    </picture>
+                  </span>
+                  <span class="footer__search-result--text">
+                    Бумажная продукция
+                  </span>
+                </a>
+              </li>
+              <li class="footer__search-result--item">
+                <a href="#" class="footer__search-result--link">
+                  <span class="footer__search-result--icon" style="--bg: #CEDDFF">
+                    <picture>
+                      <source srcset="img/categories/image-2.webp" type="image/webp">
+                      <img src="img/categories/image-2.png" alt="" width="16" class="footer__search-result--img">
+                    </picture>
+                  </span>
+                  <span class="footer__search-result--text">
+                    Бумажная продукция
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="footer__nav">
+      <div class="footer__nav--block _hidden">
+        <h2 class="footer__nav--title _title _super-large">
+          Категории
+        </h2>
+        <ul class="footer__nav--list">
+          <li class="footer__nav--item">
+            <a href="products-list.html" class="footer__nav--link">
+              Одноразовая посуда
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="products-list.html" class="footer__nav--link">
+              Бытовая химия
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="products-list.html" class="footer__nav--link">
+              Бумажная продукция
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="products-list.html" class="footer__nav--link">
+              Электротовары
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="products-list.html" class="footer__nav--link">
+              Одноразовые пакеты
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="products-list.html" class="footer__nav--link">
+              Для дома
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="products-list.html" class="footer__nav--link">
+              Мешки для мусора
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="products-list.html" class="footer__nav--link">
+              Батарейки
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="products-list.html" class="footer__nav--link">
+              Упаковочный материал
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="products-list.html" class="footer__nav--link">
+              Зажигалки
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__nav--block">
+        <h2 class="footer__nav--title _title _super-large _accent">
+          Полезно
+        </h2>
+        <ul class="footer__nav--list">
+          <li class="footer__nav--item">
+            <a href="about-store.html" class="footer__nav--link">
+              О магазине
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="faq.html" class="footer__nav--link">
+              FAQ (Вопрос - ответ)
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="delivery-pay.html" class="footer__nav--link">
+              Доставка и оплата
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="cooperation.html" class="footer__nav--link">
+              Сотрудничество
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="guarantees.html" class="footer__nav--link">
+              Гарантии
+            </a>
+          </li>
+          <li class="footer__nav--item">
+            <a href="contact-info.html" class="footer__nav--link">
+              Контакты
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__nav--add-list">
+          <li class="footer__nav--item footer__social">
+            <h3 class="footer__social--title _title">
+              Соц. сети:
+            </h3>
+            <a href="https://instagram.com/daily.opt/" class="footer__social--link" title="Инстаграм">
+              <img src="img/icons/instagram.svg" alt="instagram" class="footer__social--icon">
+            </a>
+            <a href="#" class="footer__social--link" title="Вконтакте">
+              <img src="img/icons/vk.svg" alt="vkontakte" class="footer__social--icon">
+            </a>
+          </li>
+          <li class="footer__nav--item footer__tel">
+            <a href="tel:0800171917" class="footer__tel--link">
+              <span class="footer__tel--icon _icon-phone"></span>
+              0 800 171 917
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="footer__copy">
+      <strong>© 2002-2022<br></strong>
+      <span>Все права защищены.</span>
+    </div>
+  </div>
+</footer>
+<div class="products-popup _popup _alt" id="products-popup" style="display: none; opacity: 0;">
+  <div class="products-popup__wrapper _popup-wrapper">
+    <div class="products-popup__bg _popup-bg _popup-close"></div>
+    <div class="products-popup__body _popup-body">
+      <ul class="products-popup__list _all-price-list">
+        <li class="products-popup__item cart-item _cart-product" data-article="1234" data-price="100">
+    <div class="products-popup__item--body cart-item__body">
+        <a href="product-page.html" class="products-popup__item--image cart-item__image" style="--bg: #FFDA93">
+            <picture>
+                <source srcset="img/products/image-1.webp" type="image/webp">
+                <img src="img/products/image-1.png" alt="" width="50" class="products-popup__item--img cart-item__image--img">
+            </picture>
+        </a>
+        <div class="products-popup__item--info cart-item__info">
+            <a href="product-page.html" class="products-popup__item--link cart-item__link">
+                <h3 class="products-popup__item--title cart-item__title _title" title="Гофрированный стакан бумажный 110мл Гофрированный стакан бумажный 110мл">
+                    Гофрированный стакан бумажный 110мл Lorem, ipsum dolor.
+                </h3>
+            </a>
+            <div class="products-popup__item--settings cart-item__settings product-settings">
+                <span class="products-popup__item--value cart-item__value" data-article="1234">
+                    Артикул: <b>1234</b>
+                </span>
+                <div class="product-settings__count product-count">
+                    <input type="number" readonly placeholder="0" value="30" data-step="30" data-aprice="2.84" data-currency="₴" name="count" class="product-count__input _input-count _product-count">
+                    <button type="button" class="product-count__arrow _to-up _input-count-up"></button>
+                    <button type="button" class="product-count__arrow _to-down _input-count-down"></button>
+                </div>
+                <span class="products-popup__item--value products-popup__item--price cart-item__value cart-item__price">
+                    Цена: <b class="_product-price" data-price="100">100</b>
+                </span>
+            </div>
+        </div>
+        <button class="products-popup__item--delete cart-item__delete _cart-product-delete _icon-x" type="button" title="Удалить товар из списка"></button>
+    </div>
+</li><li class="products-popup__item cart-item _cart-product" data-article="1234" data-price="100">
+    <div class="products-popup__item--body cart-item__body">
+        <a href="product-page.html" class="products-popup__item--image cart-item__image" style="--bg: #7D70FF">
+            <picture>
+                <source srcset="img/products/image-2.webp" type="image/webp">
+                <img src="img/products/image-2.png" alt="" width="50" class="products-popup__item--img cart-item__image--img">
+            </picture>
+        </a>
+        <div class="products-popup__item--info cart-item__info">
+            <a href="product-page.html" class="products-popup__item--link cart-item__link">
+                <h3 class="products-popup__item--title cart-item__title _title" title="Гофрированный стакан бумажный 110мл Гофрированный стакан бумажный 110мл">
+                    Гофрированный стакан бумажный 110мл Lorem, ipsum dolor.
+                </h3>
+            </a>
+            <div class="products-popup__item--settings cart-item__settings product-settings">
+                <span class="products-popup__item--value cart-item__value" data-article="1234">
+                    Артикул: <b>1234</b>
+                </span>
+                <div class="product-settings__count product-count">
+                    <input type="number" readonly placeholder="0" value="30" data-step="30" data-aprice="2.84" data-currency="₴" name="count" class="product-count__input _input-count _product-count">
+                    <button type="button" class="product-count__arrow _to-up _input-count-up"></button>
+                    <button type="button" class="product-count__arrow _to-down _input-count-down"></button>
+                </div>
+                <span class="products-popup__item--value products-popup__item--price cart-item__value cart-item__price">
+                    Цена: <b class="_product-price" data-price="100">100</b>
+                </span>
+            </div>
+        </div>
+        <button class="products-popup__item--delete cart-item__delete _cart-product-delete _icon-x" type="button" title="Удалить товар из списка"></button>
+    </div>
+</li>
+      </ul>
+      <div class="cart-page__block--all-price products-popup__all-price">
+        <span class="cart-page__block--all-price-name">
+          Общая Сумма:
+        </span>
+        <strong class="cart-page__block--all-price-value _all-price-value">
+          0
+        </strong>
+      </div>
+      <div class="products-popup__footer">
+        <a href="#" class="products-popup__link _btn _popup-close">
+          Продолжить покупки
+        </a>
+        <a href="#" class="products-popup__link _btn _accent">
+          <img src="img/icons/document.png" width="16" alt="" class="products-popup__link--icon">
+          Оформить заказ
+        </a>
+      </div>
+    </div>
+    <button type="button" class="products-popup__close-btn _popup-close-btn _popup-close _icon-x"></button>
+  </div>
+</div>
+<div class="product-appear-popup _popup _alt" id="product-appear" style="display: none; opacity: 0;">
+  <div class="product-appear__wrapper _popup-wrapper">
+    <div class="product-appear__bg _popup-bg _popup-close"></div>
+    <div class="product-appear__body _popup-body">
+
+      <h2 class="product-appear__title">
+        Сообщить когда появится
+      </h2>
+      <div class="product-appear__info">
+        <div class="product-appear__info--image" style="--bg: #776BEB;">
+          <picture>
+            <source srcset="img/products/image-1.webp" type="image/webp">
+            <img src="img/products/image-1.png" alt="" width="75" height="75" class="product-appear__info--img">
+          </picture>
+        </div>
+        <a href="#" class="product-appear__info--name _title" title="Гофрированный стакан бумажный 110мл Гофрированный стакан бумажный 110мл">
+          Гофрированный стакан бумажный 110мл Гофрированный стакан бумажный 110мл
+        </a>
+      </div>
+      <form action="#" class="product-appear__form">
+        <label class="product-appear__label">
+          <span class="product-appear__label--input-name _required">
+            ФИО
+          </span>
+          <input type="text" class="product-appear__input _input" name="name" placeholder="ФИО" required>
+        </label>
+        <label class="product-appear__label">
+          <span class="product-appear__label--input-name _required">
+            Телефон
+          </span>
+          <input type="tel" class="product-appear__input _input" name="tel" placeholder="Телефон" required>
+        </label>
+        <label class="product-appear__label">
+          <span class="product-appear__label--input-name _required">
+            E-mail
+          </span>
+          <input type="text" class="product-appear__input _input" name="email" placeholder="E-mail" required>
+        </label>
+        <div class="product-appear__required-message">
+          Нажимая на кнопку «Отправить», я даю cогласие на <a href="#">обработку персональных данных</a>.
+        </div>
+        <button class="product-appear__submit _btn _accent" type="submit">
+          Отправить
+        </button>
+      </form>
+    </div>
+    <button type="button" class="product-appear__close-btn _popup-close-btn _popup-close _icon-x"></button>
+  </div>
+</div>
+<script>
+  (function () {
+
+    function decimalAdjust(type, value, exp) {
+      // Если степень не определена, либо равна нулю...
+      if (typeof exp === 'undefined' || +exp === 0) {
+        return Math[type](value);
+      }
+      value = +value;
+      exp = +exp;
+      // Если значение не является числом, либо степень не является целым числом...
+      if (isNaN(value) || !(typeof exp === 'number' && exp % 1 === 0)) {
+        return NaN;
+      }
+      // Сдвиг разрядов
+      value = value.toString().split('e');
+      value = Math[type](+(value[0] + 'e' + (value[1] ? (+value[1] - exp) : -exp)));
+      // Обратный сдвиг
+      value = value.toString().split('e');
+      return +(value[0] + 'e' + (value[1] ? (+value[1] + exp) : exp));
+    }
+
+    // Десятичное округление к ближайшему
+    if (!Math.round10) {
+      Math.round10 = function (value, exp) {
+        return decimalAdjust('round', value, exp);
+      };
+    }
+    // Десятичное округление вниз
+    if (!Math.floor10) {
+      Math.floor10 = function (value, exp) {
+        return decimalAdjust('floor', value, exp);
+      };
+    }
+    // Десятичное округление вверх
+    if (!Math.ceil10) {
+      Math.ceil10 = function (value, exp) {
+        return decimalAdjust('ceil', value, exp);
+      };
+    }
+  })();
+
+
+  document.querySelector('body').addEventListener('click', function (event) {
+
+    let inputCountArrowDown = event.target.closest('._input-count-down');
+    if (inputCountArrowDown) {
+
+      let input = inputCountArrowDown.parentNode.querySelector('._input-count'),
+        inputStep = (input.dataset.step) ? Number(input.dataset.step) : 1,
+        aprice = (input.dataset.aprice) ? Number(input.dataset.aprice) : false,
+        inputValue = (input) ? Number(input.value) : false;
+
+      if (input) {
+
+        if (inputValue > inputStep) {
+
+          input.value = inputValue - inputStep;
+
+          if (aprice) {
+            let parent = input.closest('.product-settings'),
+              currency = (input.dataset.currency) ? input.dataset.currency : '',
+              price = parent.querySelector('._product-price'),
+              allPriceList = inputCountArrowDown.closest('._all-price-list'),
+              allPrice = (allPriceList) ? allPriceList.parentElement.querySelector('._all-price-value') : false;
+
+            price.textContent = Math.round10(input.value * aprice, -2) + currency;
+            price.dataset.price = Math.round10(input.value * aprice, -2);
+
+            if (allPrice) {
+              let productPrice = allPriceList.querySelectorAll('._product-price'),
+                result = 0;
+
+              productPrice.forEach(thisPrice => {
+                result += Number(thisPrice.dataset.price);
+              })
+
+              allPrice.textContent = result.toFixed(1) + currency;
+
+            }
+
+          }
+        }
+      }
+
+    }
+
+    let inputCountArrowUp = event.target.closest("._input-count-up");
+    if (inputCountArrowUp) {
+      let input = inputCountArrowUp.parentNode.querySelector("._input-count"),
+        inputStep = input.dataset.step ? Number(input.dataset.step) : 1,
+        aprice = input.dataset.aprice ? Number(input.dataset.aprice) : false,
+        inputValue = input ? Number(input.value) : false;
+
+      if (input) {
+        input.value = inputValue + inputStep;
+
+        if (aprice) {
+          let parent = input.closest(".product-settings"),
+            currency = input.dataset.currency ? input.dataset.currency : "",
+            price = parent.querySelector("._product-price"),
+            allPriceList = inputCountArrowUp.closest('._all-price-list'),
+            allPrice = (allPriceList) ? allPriceList.parentElement.querySelector('._all-price-value') : false;
+
+          price.textContent = Math.round10(input.value * aprice, -2) + currency;
+          price.dataset.price = Math.round10(input.value * aprice, -2);
+
+          if (allPrice) {
+            let productPrice = allPriceList.querySelectorAll('._product-price'),
+              result = 0;
+
+            productPrice.forEach(thisPrice => {
+              result += Number(thisPrice.dataset.price);
+            })
+
+            allPrice.textContent = result.toFixed(1) + currency;
+
+          }
+        }
+      }
+    }
+
+  })
+</script>
+
+<script src="js/libs.min.js"></script>
+<script src="js/lc_select.min.js"></script>
+<script src="js/main.min.js"></script>
+</body>
+
+</html>

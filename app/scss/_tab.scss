@@ -1,0 +1,44 @@
+._tab {
+    &-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    &-list {
+        display: flex;
+        
+        overflow-x: auto;
+        
+    }
+    &-item {
+        display: inline-block;
+        padding: 5px 10px;
+    }
+    &-link {
+        display: inline-block;
+
+        transition: all .2s ease-in-out;
+
+        &._active {
+            
+        }
+    }
+    &-block {
+        display: none;
+
+        opacity: 0;
+
+        transition: all .2s ease-in-out;
+
+        &._active {
+            display: block;
+        }
+        &._fade-in {
+            opacity: 1;
+        }
+        &._fade-out {
+            opacity: 0;
+        }
+    }
+
+}

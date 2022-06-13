@@ -1,0 +1,320 @@
+@@include("html/_header.html")
+
+<div class="wrapper">
+    <div class="page-header _section-pt">
+        <div class="page-header__container _container">
+            @@include("html/categories/_categories-btn.html")
+            @@include("html/categories/_categories.html")
+        </div>
+    </div>
+    <section class="delivery-pay _section-pt">
+        <div class="delivery-pay__container _container">
+            <div class="delivery-pay__body _section-body">
+                <h2 class="delivery-pay__title _section-title _extra-bold _color-dark">
+                    Доставка, возвраты и оплата
+                </h2>
+                <div class="delivery-pay__row">
+                    <div class="delivery-pay__main-info">
+                        <p>
+                            Доставка товара осуществляется через отделения:
+                        </p>
+                        <p>
+                            Новая Почта, Деливери, Ин-Тайм, Автолюкс, 
+                            Мист Экспресс, Гюнсел.
+                        </p>
+                    </div>
+                    <div class="delivery-pay__tab-block _tab-section">
+                        <ul class="delivery-pay__tab-block--list _tab-list">
+                            @@loop("html/delivery-pay/_delivery-item.html", [
+                            {"icon": '1', "active": ' _active'},
+                            {"icon": '2', "active": ''},
+                            {"icon": '3', "active": ''},
+                            {"icon": '4', "active": ''},
+                            {"icon": '5', "active": ''},
+                            {"icon": '6', "active": ''},
+                            ])
+                        </ul>
+                    </div>
+                </div>
+                <div class="delivery-pay__accent-span">
+                    <strong>
+                        Самовывоз или бесплатная доставка (промрынок 7 км)
+                    </strong>
+                </div>
+                <div class="delivery-pay__tab-wrapper _tab-wrapper">
+                    <div class="delivery-pay__tab-elem _tab-block _active _fade-in" id="delivery-1">
+                        <div class="delivery-pay__tab-elem--body">
+                            <div class="delivery-pay__tab-elem--block">
+                                <div class="delivery-pay__tab-elem--header">
+                                    <div class="delivery-pay__tab-elem--icon">
+                                        <img src="img/delivery-icons/icon-1.png" alt="" class="delivery-pay__tab-elem--img">
+                                    </div>
+                                    <h3 class="delivery-pay__tab-elem--title _title _large">
+                                        Новая почта
+                                    </h3>
+                                    <span class="delivery-pay__tab-elem--subtitle">
+                                        График отправления товара:
+                                    </span>
+                                </div>
+                                <ul class="delivery-pay__tab-elem--scheduly delivery-pay__scheduly">
+                                    <li class="delivery-pay__scheduly--item">
+                                        Пн: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Чт: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Вт: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Сб: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Ср: 09:00-14:00
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="delivery-pay__tab-elem--block">
+                                <div class="delivery-pay__tab-elem--info">
+                                    <p>Цена доставки зависит от размера груза без ограничения по весу.</p>
+                                    <p>Возможно отследить перевозку груза на сайте грузоперевозчика.</p>
+                                    <p><strong>Срок доставки – от 1 до 3 дней.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery-pay__tab-elem _tab-block" id="delivery-2">
+                        <div class="delivery-pay__tab-elem--body">
+                            <div class="delivery-pay__tab-elem--block">
+                                <div class="delivery-pay__tab-elem--header">
+                                    <div class="delivery-pay__tab-elem--icon">
+                                        <img src="img/delivery-icons/icon-2.png" alt="" class="delivery-pay__tab-elem--img">
+                                    </div>
+                                    <h3 class="delivery-pay__tab-elem--title _title _large">
+                                        Новая почта
+                                    </h3>
+                                    <span class="delivery-pay__tab-elem--subtitle">
+                                        График отправления товара:
+                                    </span>
+                                </div>
+                                <ul class="delivery-pay__tab-elem--scheduly delivery-pay__scheduly">
+                                    <li class="delivery-pay__scheduly--item">
+                                        Пн: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Чт: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Вт: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Сб: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Ср: 09:00-14:00
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="delivery-pay__tab-elem--block">
+                                <div class="delivery-pay__tab-elem--info">
+                                    <p>Цена доставки зависит от размера груза без ограничения по весу.</p>
+                                    <p>Возможно отследить перевозку груза на сайте грузоперевозчика.</p>
+                                    <p><strong>Срок доставки – от 1 до 3 дней.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery-pay__tab-elem _tab-block" id="delivery-3">
+                        <div class="delivery-pay__tab-elem--body">
+                            <div class="delivery-pay__tab-elem--block">
+                                <div class="delivery-pay__tab-elem--header">
+                                    <div class="delivery-pay__tab-elem--icon">
+                                        <img src="img/delivery-icons/icon-3.png" alt="" class="delivery-pay__tab-elem--img">
+                                    </div>
+                                    <h3 class="delivery-pay__tab-elem--title _title _large">
+                                        Новая почта
+                                    </h3>
+                                    <span class="delivery-pay__tab-elem--subtitle">
+                                        График отправления товара:
+                                    </span>
+                                </div>
+                                <ul class="delivery-pay__tab-elem--scheduly delivery-pay__scheduly">
+                                    <li class="delivery-pay__scheduly--item">
+                                        Пн: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Чт: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Вт: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Сб: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Ср: 09:00-14:00
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="delivery-pay__tab-elem--block">
+                                <div class="delivery-pay__tab-elem--info">
+                                    <p>Цена доставки зависит от размера груза без ограничения по весу.</p>
+                                    <p>Возможно отследить перевозку груза на сайте грузоперевозчика.</p>
+                                    <p><strong>Срок доставки – от 1 до 3 дней.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery-pay__tab-elem _tab-block" id="delivery-4">
+                        <div class="delivery-pay__tab-elem--body">
+                            <div class="delivery-pay__tab-elem--block">
+                                <div class="delivery-pay__tab-elem--header">
+                                    <div class="delivery-pay__tab-elem--icon">
+                                        <img src="img/delivery-icons/icon-4.png" alt="" class="delivery-pay__tab-elem--img">
+                                    </div>
+                                    <h3 class="delivery-pay__tab-elem--title _title _large">
+                                        Новая почта
+                                    </h3>
+                                    <span class="delivery-pay__tab-elem--subtitle">
+                                        График отправления товара:
+                                    </span>
+                                </div>
+                                <ul class="delivery-pay__tab-elem--scheduly delivery-pay__scheduly">
+                                    <li class="delivery-pay__scheduly--item">
+                                        Пн: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Чт: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Вт: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Сб: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Ср: 09:00-14:00
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="delivery-pay__tab-elem--block">
+                                <div class="delivery-pay__tab-elem--info">
+                                    <p>Цена доставки зависит от размера груза без ограничения по весу.</p>
+                                    <p>Возможно отследить перевозку груза на сайте грузоперевозчика.</p>
+                                    <p><strong>Срок доставки – от 1 до 3 дней.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery-pay__tab-elem _tab-block" id="delivery-5">
+                        <div class="delivery-pay__tab-elem--body">
+                            <div class="delivery-pay__tab-elem--block">
+                                <div class="delivery-pay__tab-elem--header">
+                                    <div class="delivery-pay__tab-elem--icon">
+                                        <img src="img/delivery-icons/icon-5.png" alt="" class="delivery-pay__tab-elem--img">
+                                    </div>
+                                    <h3 class="delivery-pay__tab-elem--title _title _large">
+                                        Новая почта
+                                    </h3>
+                                    <span class="delivery-pay__tab-elem--subtitle">
+                                        График отправления товара:
+                                    </span>
+                                </div>
+                                <ul class="delivery-pay__tab-elem--scheduly delivery-pay__scheduly">
+                                    <li class="delivery-pay__scheduly--item">
+                                        Пн: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Чт: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Вт: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Сб: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Ср: 09:00-14:00
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="delivery-pay__tab-elem--block">
+                                <div class="delivery-pay__tab-elem--info">
+                                    <p>Цена доставки зависит от размера груза без ограничения по весу.</p>
+                                    <p>Возможно отследить перевозку груза на сайте грузоперевозчика.</p>
+                                    <p><strong>Срок доставки – от 1 до 3 дней.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="delivery-pay__tab-elem _tab-block" id="delivery-6">
+                        <div class="delivery-pay__tab-elem--body">
+                            <div class="delivery-pay__tab-elem--block">
+                                <div class="delivery-pay__tab-elem--header">
+                                    <div class="delivery-pay__tab-elem--icon">
+                                        <img src="img/delivery-icons/icon-6.png" alt="" class="delivery-pay__tab-elem--img">
+                                    </div>
+                                    <h3 class="delivery-pay__tab-elem--title _title _large">
+                                        Новая почта
+                                    </h3>
+                                    <span class="delivery-pay__tab-elem--subtitle">
+                                        График отправления товара:
+                                    </span>
+                                </div>
+                                <ul class="delivery-pay__tab-elem--scheduly delivery-pay__scheduly">
+                                    <li class="delivery-pay__scheduly--item">
+                                        Пн: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Чт: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Вт: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Сб: 09:00-14:00
+                                    </li>
+                                    <li class="delivery-pay__scheduly--item">
+                                        Ср: 09:00-14:00
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="delivery-pay__tab-elem--block">
+                                <div class="delivery-pay__tab-elem--info">
+                                    <p>Цена доставки зависит от размера груза без ограничения по весу.</p>
+                                    <p>Возможно отследить перевозку груза на сайте грузоперевозчика.</p>
+                                    <p><strong>Срок доставки – от 1 до 3 дней.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="delivery-pay__footer">
+                    <h2 class="delivery-pay__footer--title _section-title _extra-bold _color-dark">
+                        Способы оплаты
+                    </h2>
+                    <ul class="delivery-pay__footer--list">
+                        <li class="delivery-pay__footer--item">
+                            - Предоплата (такой способ оплаты осуществляется 
+                            на месте после оформления заказа);
+                        </li>
+                        <li class="delivery-pay__footer--item">
+                            - После получения товара (оплата наличными при отгрузке товара грузоперевозчику).
+                        </li>
+                        <li class="delivery-pay__footer--item">
+                            - Оплатить при получении товара на Новой Почте, Деливери, 
+                            Ин-Тайм, Автолюкс, Мист Экспресс, Гюнсел (комиссия 
+                            зависит от способа доставки);
+                        </li>
+                        <li class="delivery-pay__footer--item">
+                            - С помощью перевода Приват24 
+                            (комиссия 0,5%);
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+@@include("html/_footer.html")

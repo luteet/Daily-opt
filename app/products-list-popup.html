@@ -1,0 +1,51 @@
+@@include("html/_header.html")
+
+<div class="wrapper">
+    <div class="page-header _section-pt">
+        <div class="page-header__container _container">
+            <div class="page-address">
+                <div class="page-address__body">
+                    <span class="page-address__icon _icon-house"></span>
+                    <ul class="page-address__list">
+                        <li class="page-address__item">
+                            <a href="#" class="page-address__link">
+                                Всё для кофейни
+                            </a>
+                        </li>
+                        <li class="page-address__item">
+                            <a href="#" class="page-address__link">
+                                Экологичные стаканчики
+                            </a>
+                        </li>
+                        <li class="page-address__item">
+                            <a href="#" class="page-address__link">
+                                Гофрированный стакан бумажный 110мл
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            @@include("html/categories/_categories-btn.html")
+            @@include("html/categories/_categories.html")
+        </div>
+    </div>
+    <section class="products-list _section-pt">
+        <div class="products-list__container _container">
+            @@include("html/products/_products-none-loadmore-btn.html", {
+                "class": 'products-list__block',
+            })
+        </div>
+    </section>
+    
+    <script>
+        window.onload = function() {
+            popup({
+                id: '#products-popup',
+                html: document.querySelector('html'),
+                body: document.querySelector('body'),
+            });
+        }
+    </script>
+</div>
+
+@@include("html/_footer.html")

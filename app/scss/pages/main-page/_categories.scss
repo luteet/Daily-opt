@@ -1,0 +1,12 @@
+.main-page-categories {
+    &__block {
+        background-color: var(--white);
+        border-radius: var(--br);
+        
+        padding: 25px 15px;
+        @include _500 {
+            padding: 25px 37px;
+        }
+
+    }
+}

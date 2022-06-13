@@ -1,0 +1,49 @@
+    @@include("html/_header.html")
+
+    <body>
+
+      <section class="autohization">
+        <div class="container">
+          <h2 class="autohization__title">Вход в личный кабинет</h2>
+          <div class="autohization__inner">
+            <form class="autohization__form form-entry" action="">
+              <h3 class="autohization-form__title">Просто войти</h3>
+              <label class="autohization__label" for="">
+                <input class="autohization__input" type="text" id="input-entry" placeholder="Ваш email">
+              </label>
+              <label class="autohization__label" for="">
+                <input class="autohization__input" type="text" id="input-entry" placeholder="Ваш пароль">
+              </label>
+              <a class="autohization__link" href="#">Напомнить пароль</a>
+              <button class="autohization__btn" data-entry type="submit">Войти</button>
+            </form>
+            <form class="autohization__form form-registration" action="">
+              <h3 class="autohization-form__title">Регистрация</h3>
+              <label class="autohization__label" for="">
+                <input class="autohization__input" type="text" id="input-autoh" placeholder="Ваше имя">
+              </label>
+              <label class="autohization__label" for="">
+                <input class="autohization__input" type="text" id="input-autoh" placeholder="Ваша фамилия">
+              </label>
+              <label class="autohization__label" for="">
+                <input class="autohization__input" type="text" id="input-autoh" placeholder="E-mail">
+              </label>
+              <label class="autohization__label" for="">
+                <input class="autohization__input" type="text" id="input-autoh" placeholder="Пароль">
+              </label>
+              <label class="autohization__label" for="">
+                <input class="autohization__input" type="text" id="input-autoh" placeholder="Подтвердить пароль">
+              </label>
+              <label class="autohization__label" for="">
+                <input class="autohization__checkbox" type="checkbox">
+                Согласен со всеми &nbsp;<a class="autohization__copy" href="#">условиями</a>
+              </label>
+              <button class="autohization__btn" disabled type="submit">Продолжить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      @@include("html/_footer.html")
+    </body>
+
+    </html>

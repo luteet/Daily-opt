@@ -32,12 +32,12 @@
     }
 
     &__categories-list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        @include _768 {
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-        gap: 15px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        margin: calc(-15px / 2);
 
         padding-bottom: 30px; margin-bottom: 30px;
 
@@ -45,10 +45,20 @@
     }
 
     &__categories-item {
+        flex: 0 1 50%;
+
+        @include _768 {
+            flex: 0 1 25%;
+        }
+
+        padding: calc(15px / 2);
+        
 
         &--body {
             display: flex;
             flex-direction: column;
+
+            min-height: 100%;
         }
 
         &--body:hover &--title {
